@@ -1,0 +1,22 @@
+# virtualenv
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local configs / secrets
+config.binance_futures_live.json
+*.env
+
+# Local data / reports
+reports/
+trade_events.csv
+pnl_daily.csv
+trades_last6h.csv
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
