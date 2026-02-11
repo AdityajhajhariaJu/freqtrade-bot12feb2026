@@ -9,12 +9,6 @@ __pycache__/
 config.binance_futures_live.json
 *.env
 
-# Local data / reports
-reports/
-trade_events.csv
-pnl_daily.csv
-trades_last6h.csv
-
 # Logs
 *.log
 

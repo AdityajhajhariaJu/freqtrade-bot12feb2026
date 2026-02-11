@@ -1,0 +1,129 @@
+1770728360,ENTRY,INJUSDT,SHORT,78.99934167215274,3.038,vwap_bounce,VWAP Bounce Scalp,,VWAP rejection short | Dist=-0.076% | RSI=55.6
+1770728439,ENTRY,INJUSDT,SHORT,78.97334649555775,3.039,vwap_bounce,VWAP Bounce Scalp,,VWAP rejection short | Dist=-0.028% | RSI=50.0
+1770729947,CLOSE_MAX_AGE,INJ,SHORT,157.8,,,,,max_age
+1770731763,ENTRY,LTCUSDT,LONG,3.750234389649353,53.33,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.33% | ATR=0.094%
+1770733336,CLOSE_MAX_AGE,LTC,LONG,3.75,,,,,max_age
+1770734362,ENTRY,DOGEUSDT,SHORT,979.5918367346933,0.09248,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze SHORT FIRE | Momentum=-0.00↓ | ADX=17.7 | Vol=5.0x | RSI=38.3 | ATR%=0.392%
+1770734363,ENTRY,ETHUSDT,SHORT,0.06668254346272938,2007.33,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=1.43% | ATR=0.299%
+1770734447,ENTRY,BNBUSDT,SHORT,0.1802575107296117,619.2,adx_di_cross,ADX DI Crossover,,ADX DI Cross SHORT | ADX=29.4↑ | -DI=33.0>17.8 | RSI=33.3 | Vol=3.2x | BBwidth=0.010↑
+1770734672,ENTRY,DOGEUSDT,SHORT,649.5615459564794,0.09237,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze SHORT FIRE | Momentum=-0.00↓ | ADX=18.4 | Vol=4.7x | RSI=28.5 | ATR%=0.426%
+1770735870,CLOSE_MAX_AGE,DOGE,SHORT,1628.0,,,,,max_age
+1770736020,CLOSE_MAX_AGE,BNB,SHORT,0.18,,,,,max_age
+1770739522,ENTRY,DOGEUSDT,SHORT,2160.9940572663427,0.09255,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.60% | ATR=0.184%
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770740120,ENTRY,ETHUSDT,LONG,0.09204470742932327,2031.82,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=1.08% | ATR=0.214%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770741545,ENTRY,DOGEUSDT,LONG,2140.869192892314,0.09342,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.73% | ATR=0.167%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770741715,ENTRY_RECOVER,DOGE,LONG,2140.0,0.0934,,,,Recovered open position (strategy unknown),unknown
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770741786,ENTRY_RECOVER,DOGE,,2140.0,,,,,Recovered open position,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770743889,ENTRY,ETHUSDT,LONG,0.09843730773963331,2031.75,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.67% | ATR=0.132%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770745462,CLOSE_MAX_AGE,ETH,LONG,0.098,,,,,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770746814,ENTRY,NEARUSDT,SHORT,112.00000000000199,0.996,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze SHORT FIRE | Momentum=-0.00↓ | ADX=27.5 | Vol=1.6x | RSI=41.7 | ATR%=0.409%,2h
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770748015,ENTRY,AVAXUSDT,SHORT,22.95684113865932,8.712,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=1.03% | ATR=0.169%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770748388,CLOSE_MAX_AGE,NEAR,SHORT,112.0,,,,,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770749587,CLOSE_MAX_AGE,AVAX,SHORT,22.0,,,,,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770749590,ENTRY,DOGEUSDT,LONG,1516.7930660888408,0.0923,keltner_reversion,Keltner Channel Mean Reversion,,Keltner LONG Reversion | Price at lower band | RSI=20.5 | ADX=25.6 | CMF=0.005 | Dist to mid=0.87%,2h
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770749846,ENTRY_RECOVER,DOGE,,1516.0,,,,,Recovered open position,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770751123,CLOSE_MAX_AGE,DOGE,LONG,1516.0,,,,,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770752281,ENTRY,NEARUSDT,LONG,193.10344827586187,0.991,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=1.23% | ATR=0.209%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770752501,ENTRY_RECOVER,NEAR,,193.0,,,,,Recovered open position,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770754454,ENTRY,AVAXUSDT,SHORT,22.996435552489366,8.697,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.41% | ATR=0.102%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770755354,ENTRY,LTCUSDT,LONG,3.7530493525989868,53.29,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.32% | ATR=0.079%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770756027,CLOSE_MAX_AGE,AVAX,SHORT,22.0,,,,,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770756703,ENTRY_RECOVER,LTC,,3.753,,,,,Recovered open position,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770756854,CLOSE_MAX_AGE,LTC,LONG,3.753,,,,,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770759016,ENTRY,ETHUSDT,SHORT,0.09977450960828528,2004.52,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.46% | ATR=0.072%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770759091,ENTRY,LTCUSDT,SHORT,2.2645782223060955,52.99,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze SHORT FIRE | Momentum=-0.26↓ | ADX=31.4 | Vol=1.9x | RSI=38.5 | ATR%=0.226%,2h
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770760589,CLOSE_MAX_AGE,ETH,SHORT,0.099,2007.06,,,-0.34254,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770762166,ENTRY,AVAXUSDT,LONG,22.95684113865932,8.712,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.30% | ATR=0.075%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770766366,ENTRY,LTCUSDT,LONG,3.75234521575985,53.3,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.27% | ATR=0.064%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770766741,ENTRY,ETHUSDT,LONG,0.09906630012135623,2018.85,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.32% | ATR=0.081%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770767939,CLOSE_MAX_AGE,LTC,LONG,3.752,53.32,,,,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770768241,ENTRY,LTCUSDT,LONG,3.746721618583739,53.38,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.15% | ATR=0.060%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770768314,CLOSE_MAX_AGE,ETH,LONG,0.099,2021.28,,,0.25839,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770768391,ENTRY,ETHUSDT,LONG,0.09887676000632811,2022.72,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.27% | ATR=0.090%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770769814,CLOSE_MAX_AGE,LTC,LONG,3.746,53.3,,,-0.41206,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770769964,CLOSE_MAX_AGE,ETH,LONG,0.098,2023.95,,,0.18228,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770771316,ENTRY,LTCUSDT,LONG,3.743916136278547,53.42,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.40% | ATR=0.082%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770772890,CLOSE_MAX_AGE,LTC,LONG,3.743,53.36,,,-0.26201,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770774241,ENTRY,AVAXUSDT,LONG,22.794620469569185,8.774,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.38% | ATR=0.075%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770775441,ENTRY,ETHUSDT,LONG,0.09859016070196194,2028.6,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.37% | ATR=0.089%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770775516,ENTRY,DOGEUSDT,LONG,2143.392991104919,0.09331,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.57% | ATR=0.077%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770777015,CLOSE_MAX_AGE,ETH,LONG,0.098,2028.87,,,0.11661998999999999,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770777019,ENTRY,LTCUSDT,LONG,3.7264766163592324,53.67,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.36% | ATR=0.073%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770777090,CLOSE_MAX_AGE,DOGE,LONG,2143.0,0.09351,,,0.4286,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770779191,ENTRY,DOGEUSDT,SHORT,2154.9402004094386,0.09281,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.35% | ATR=0.083%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770779716,ENTRY,ETHUSDT,SHORT,0.09954309718392577,2009.18,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.46% | ATR=0.122%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770781291,ENTRY,AVAXUSDT,LONG,13.401831583649765,8.954,adx_di_cross,ADX DI Crossover,,ADX DI Cross LONG | ADX=37.3↑ | +DI=44.8>16.7 | RSI=65.7 | Vol=4.5x | BBwidth=0.017↑,2h
+1770782105,RESET_MAPPING,,,,,,,,fresh_mapping_start,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770783166,ENTRY,ETHUSDT,SHORT,0.09984773220838222,2003.05,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.49% | ATR=0.116%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770783241,ENTRY,LTCUSDT,SHORT,3.7778617302606725,52.94,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.45% | ATR=0.098%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770783586,ENTRY_RECOVER,ETH,,0.099,,,,,Recovered open position,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770783586,ENTRY_RECOVER,LTC,,3.777,,,,,Recovered open position,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770784663,ENTRY,ETHUSDT,LONG,0.0703139013452909,1982.61,keltner_reversion,Keltner Channel Mean Reversion,,Keltner LONG Reversion | Price at lower band | RSI=20.1 | ADX=29.3 | CMF=-0.015 | Dist to mid=1.07%,2h
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770784813,ENTRY,NEARUSDT,SHORT,151.3513513513512,0.979,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=1.79% | ATR=0.409%,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770785038,ENTRY,DOGEUSDT,LONG,1527.7171540811873,0.09164,keltner_reversion,Keltner Channel Mean Reversion,,Keltner LONG Reversion | Price at lower band | RSI=29.6 | ADX=23.3 | CMF=-0.090 | Dist to mid=1.06%,2h
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770785406,ENTRY_RECOVER,DOGE,,1527.0,,,,,Recovered open position,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770785406,ENTRY_RECOVER,NEAR,,151.0,,,,,Recovered open position,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770785636,ENTRY,DOGEUSDT,LONG,1526.051885764116,0.09174,keltner_reversion,Keltner Channel Mean Reversion,,Keltner LONG Reversion | Price at lower band | RSI=25.0 | ADX=26.3 | CMF=-0.079 | Dist to mid=0.81%,2h
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770786384,CLOSE_MAX_AGE,NEAR,SHORT,151.0,0.981,,,-0.45299999999999996,max_age,
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770790111,ENTRY,ETHUSDT,SHORT,0.08135041692088672,1966.8,atr_breakout,ATR Volatility Breakout,,ATR breakout DOWN | Break=0.53x ATR | Vol=2.3x,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770790411,ENTRY,DOGEUSDT,SHORT,1595.4415954415895,0.09077,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=1.51% | ATR=0.276% | Vol>1.5x,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770790486,ENTRY,LTCUSDT,SHORT,2.947368421052623,52.05,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=1.20% | ATR=0.261% | Vol>1.5x,1m
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770790786,ENTRY,ETHUSDT,SHORT,0.05139406398560966,1945.75,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=1.68% | ATR=0.402% | Vol>1.5x,1m
