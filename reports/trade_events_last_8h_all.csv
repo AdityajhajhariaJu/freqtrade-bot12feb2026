@@ -1,0 +1,16 @@
+ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
+1770903320,ENTRY,ETHUSDT,LONG,0.06042204800531714,1986.03,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=55.7 | Vol=1.5x | 15m gap=0.429% | conf=0.8029,2h
+1770903094,ENTRY,NEARUSDT,LONG,93.33333333333327,0.96,cmf_divergence,CMF Divergence,,CMF Bullish Divergence | Price LL but CMF HL | CMF: -0.547→-0.442 | RSI=25.0 | Strength=0.105 | conf=0.8600,2h
+1770898084,CLOSE_DETECTED,ETHUSDT,SHORT,,1982.17,cmf_divergence,,0.9345,detected_disappear | trade_id=1770895943-ETHUSDT,
+1770895943,ENTRY,ETHUSDT,SHORT,0.07011358400608987,1996.76,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.119→0.000 | RSI=74.1 | Strength=0.118 | conf=0.8600,2h
+1770895080,ENTRY,NEARUSDT,LONG,101.81818181818105,1.0,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=51.5 | Vol=1.0x | 15m gap=0.965% | conf=0.7538,2h
+1770893431,ENTRY,ETHUSDT,SHORT,0.07041863880771185,1988.11,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.254→-0.010 | RSI=69.8 | Strength=0.265 | conf=0.8453,2h
+1770892231,ENTRY,NEARUSDT,SHORT,139.99999999999986,0.997,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.191→0.076 | RSI=78.9 | Strength=0.115 | conf=0.8600,2h
+1770891326,CLOSE_MAX_AGE,NEARUSDT,LONG,159.0,0.998,,,0.6359999999999999,max_age,
+1770888856,ENTRY,NEARUSDT,LONG,159.9999999999999,0.993,atr_breakout,ATR Volatility Breakout,,ATR breakout UP | Break=1.50x ATR | Vol=1.9x | conf=0.7200,1m
+1770888855,ENTRY,DOGEUSDT,LONG,1286.3115017686785,0.09329,ichimoku_cloud,Ichimoku Cloud Breakout,,Ichimoku LONG | TK Bull Cross | Above Cloud | ADX=24.9 | +DI=33.9 | Cloud=GREEN | Vol=2.1x | conf=0.8800,2h
+1770886380,ENTRY,NEARUSDT,LONG,121.8274111675127,0.985,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=51.6 | Vol=0.8x | 15m gap=0.603% | conf=0.6918,2h
+1770884505,ENTRY,ETHUSDT,SHORT,0.061163949967888924,1961.94,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze SHORT FIRE | Momentum=-7.79↓ | ADX=12.9 | Vol=2.8x | RSI=45.2 | ATR%=0.238% | conf=0.8247,2h
+1770880530,ENTRY,NEARUSDT,LONG,122.44897959183673,0.98,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=60.0 | Vol=1.1x | 15m gap=0.447% | conf=0.7852,2h
+1770876854,ENTRY,NEARUSDT,SHORT,143.14928425357874,0.978,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: -0.040→-0.166 | RSI=63.3 | Strength=0.126 | conf=0.8022,2h
+1770876039,CLOSE_MAX_AGE,LTCUSDT,LONG,2.267,52.93,,,-0.06801,max_age,

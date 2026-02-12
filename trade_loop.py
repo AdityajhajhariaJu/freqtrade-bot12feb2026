@@ -264,6 +264,47 @@ def update_trade_exit(trade_id, ts, exit_price, realized_pnl):
     _sort_trade_log_desc()
     rebuild_trade_exit_log()
 
+def _resolve_open_trade_from_log(pair, side=None):
+    """Return latest open trade row (trade_id, strategy_id, strategy_name, side) for pair[/side]."""
+    import csv
+    from pathlib import Path
+    fpath = Path(TRADE_LOG_PATH)
+    if not fpath.exists():
+        return None
+    pn = normalize_pair(pair)
+    rows = []
+    with fpath.open() as f:
+        r = csv.DictReader(f)
+        for row in r:
+            if normalize_pair(row.get('pair') or '') != pn:
+                continue
+            if side and (row.get('side') or '').upper() != (side or '').upper():
+                continue
+            if (row.get('exit_ts') or '').strip():
+                continue
+            rows.append(row)
+    if not rows:
+        return None
+    rows.sort(key=lambda x: int(float(x.get('entry_ts') or 0)), reverse=True)
+    row = rows[0]
+    return {
+        'trade_id': row.get('trade_id') or '',
+        'strategy_id': row.get('strategy_id') or '',
+        'strategy_name': row.get('strategy_name') or '',
+        'side': row.get('side') or '',
+    }
+
+def _resolve_strategy_for_close(pair, side=None):
+    meta = _meta_get(pair) or {}
+    sid = meta.get('strategy_id') or ''
+    sname = meta.get('strategy_name') or ''
+    if sid:
+        return sid, sname
+    row = _resolve_open_trade_from_log(pair, side)
+    if row:
+        return row.get('strategy_id') or '', row.get('strategy_name') or ''
+    return '', ''
+
 def load_keys():
     with open(CONFIG_PATH, "r") as f: cfg = json.load(f)
     api_key = cfg.get("exchange", {}).get("key"); secret = cfg.get("exchange", {}).get("secret")
@@ -464,9 +505,20 @@ async def close_position(exchange, pair, side, amount):
                 realized = sum(float(r.get('income', 0) or 0) for r in data if r.get('symbol') in (pair, pair.replace('/USDT:USDT','').replace('/USDT','')+'USDT'))
                 if realized != 0: pnl = realized
         except Exception: pass
-        log_event("CLOSE_MAX_AGE", pair, side, qty=amount, price=close_price, pnl=pnl, note="max_age")
+        sid, sname = _resolve_strategy_for_close(pair, side)
+        trade_id = (_meta_get(pair).get('trade_id') or '')
+        if not trade_id:
+            row = _resolve_open_trade_from_log(pair, side)
+            if row:
+                trade_id = row.get('trade_id') or ''
+                if not sid:
+                    sid = row.get('strategy_id') or ''
+                    sname = row.get('strategy_name') or ''
+        note = "max_age"
+        if trade_id:
+            note += f" | trade_id={trade_id}"
+        log_event("CLOSE_MAX_AGE", pair, side, qty=amount, price=close_price, strategy_id=sid, strategy_name=sname, pnl=pnl, note=note)
         try:
-            trade_id = _meta_get(pair).get('trade_id')
             if trade_id:
                 update_trade_exit(trade_id, time.time(), close_price, pnl)
         except Exception:
@@ -476,6 +528,58 @@ async def close_position(exchange, pair, side, amount):
     except Exception as e: print(f"Close error {pair}: {e}")
 
 # BUG-005 FIX: rsi is now imported from strategies at the top
+async def finalize_disappeared_position(exchange, pair, side):
+    """When a position disappears (TP/SL/manual close), finalize entry log row with best-effort exit/pnl."""
+    try:
+        meta = _meta_get(pair)
+        opened_at = meta.get('opened_at')
+        trade_id = meta.get('trade_id') or ''
+        sid, sname = _resolve_strategy_for_close(pair, side)
+        if not trade_id:
+            row = _resolve_open_trade_from_log(pair, side)
+            if row:
+                trade_id = row.get('trade_id') or ''
+                if not sid:
+                    sid = row.get('strategy_id') or ''
+                    sname = row.get('strategy_name') or ''
+        if not trade_id:
+            return
+        close_price = None
+        pnl = None
+        try:
+            t = await exchange.fetch_ticker(pair)
+            close_price = float(t.get('last') or t.get('close') or 0) or None
+        except Exception:
+            close_price = None
+        try:
+            if opened_at:
+                data = await exchange.fapiPrivateGetIncome({
+                    "incomeType": "REALIZED_PNL",
+                    "startTime": int(float(opened_at) * 1000),
+                    "endTime": int(time.time() * 1000),
+                    "limit": 1000,
+                })
+                sym_norm = normalize_pair(pair)
+                realized = sum(
+                    float(r.get('income', 0) or 0)
+                    for r in data
+                    if normalize_pair(r.get('symbol') or '') == sym_norm
+                )
+                if realized != 0:
+                    pnl = realized
+        except Exception:
+            pass
+        note = "detected_disappear"
+        if trade_id:
+            note += f" | trade_id={trade_id}"
+        log_event("CLOSE_DETECTED", pair, side, qty=None, price=close_price, strategy_id=sid, strategy_name=sname, pnl=pnl, note=note)
+        try:
+            update_trade_exit(trade_id, time.time(), close_price, pnl)
+        except Exception:
+            pass
+    except Exception:
+        pass
+
 def should_momentum_exit(candles, side):
     if len(candles) < 15: return False
     closes = [c.close for c in candles]
@@ -552,6 +656,15 @@ async def loop():
                 extra = max(0, post_close - cooldown)
                 for pair in list(position_meta.keys()):
                     if pair not in current_pairs:
+                        # Position disappeared (likely TP/SL/manual close): finalize entry log exit row.
+                        try:
+                            side_guess = 'LONG'
+                            row = _resolve_open_trade_from_log(pair)
+                            if row and row.get('side'):
+                                side_guess = (row.get('side') or 'LONG').upper()
+                            await finalize_disappeared_position(exchange, pair, side_guess)
+                        except Exception:
+                            pass
                         ts = time.time() + extra if extra else time.time()
                         set_pair_cooldown(pair, ts)
                         position_meta.pop(pair, None); save_position_meta()

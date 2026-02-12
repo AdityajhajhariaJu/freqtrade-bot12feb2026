@@ -1,0 +1,285 @@
+ts,pair,strategy_id,strategy_name,side,confidence,price,reason
+1770817267,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,SHORT,0.84,0.08983,Cooldown: DOGEUSDT 0s/1200s
+1770817417,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,SHORT,0.8217180734146329,0.08968,Cooldown: DOGEUSDT 150s/1200s
+1770817643,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.8092388018686482,597.12,Cooldown: BNBUSDT 76s/1200s
+1770817643,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,0.967,Cooldown: NEARUSDT 0s/1200s
+1770817867,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.8389585172109447,596.51,Cooldown: BNBUSDT 300s/1200s
+1770818092,DOGEUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,SHORT,0.8409584912530556,0.08947,Cooldown: DOGEUSDT 825s/1200s
+1770818393,AVAXUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,LONG,0.8595235046339278,8.651,Blocked by 12H bias (SHORT)
+1770818467,ETHUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,LONG,0.8384177546343768,1960.3,Blocked by 12H bias (SHORT)
+1770818467,LTCUSDT,cmf_divergence,CMF Divergence,SHORT,0.8107692307692332,52.52,Cooldown: LTCUSDT 0s/1200s
+1770818542,AVAXUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,LONG,0.86,8.69,Cooldown: AVAXUSDT 149s/1200s
+1770818617,AVAXUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,LONG,0.86,8.706,Cooldown: AVAXUSDT 224s/1200s
+1770818617,LTCUSDT,supertrend_flip,Supertrend Trend Flip,LONG,0.8129906542056083,52.75,Cooldown: LTCUSDT 150s/1200s
+1770818692,ETHUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,LONG,0.89,1979.23,Cooldown: ETHUSDT 225s/1200s
+1770818692,DOGEUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,LONG,0.8497554454033069,0.09096,Blocked by 12H bias (SHORT)
+1770818768,ETHUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,LONG,0.86,1977.68,Cooldown: ETHUSDT 300s/1200s
+1770818768,LTCUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,LONG,0.86,52.84,Cooldown: LTCUSDT 300s/1200s
+1770818842,ETHUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,LONG,0.89,1977.52,Cooldown: ETHUSDT 375s/1200s
+1770818842,DOGEUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,LONG,0.8798906139049195,0.0911,Cooldown: DOGEUSDT 150s/1200s
+1770818992,DOGEUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,LONG,0.8597983990430814,0.09107,Cooldown: DOGEUSDT 300s/1200s
+1770819292,NEARUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,LONG,0.88,0.995,Blocked by 12H bias (SHORT)
+1770819367,NEARUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,LONG,0.88,0.997,Cooldown: NEARUSDT 75s/1200s
+1770819443,NEARUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,LONG,0.88,0.994,Cooldown: NEARUSDT 150s/1200s
+1770819518,NEARUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,LONG,0.88,0.995,Cooldown: NEARUSDT 225s/1200s
+1770820652,DOGEUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,LONG,0.88,0.09013,Cooldown: DOGEUSDT 0s/1200s
+1770820726,DOGEUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,LONG,0.88,0.09,Cooldown: DOGEUSDT 75s/1200s
+1770821476,LTCUSDT,cmf_divergence,CMF Divergence,LONG,0.827925407925408,51.63,Cooldown: LTCUSDT 750s/1200s
+1770822076,LTCUSDT,cmf_divergence,CMF Divergence,LONG,0.8296385542168673,51.52,Cooldown: LTCUSDT 0s/1200s
+1770822676,LTCUSDT,cmf_divergence,CMF Divergence,LONG,0.8554110207768741,51.41,Cooldown: LTCUSDT 600s/1200s
+1770822676,BNBUSDT,supertrend_flip,Supertrend Trend Flip,SHORT,0.85,592.54,Cooldown: BNBUSDT 0s/1200s
+1770822908,LTCUSDT,keltner_reversion,Keltner Channel Mean Reversion,LONG,0.7571330627877256,51.17,Cooldown: LTCUSDT 0s/1200s
+1770825702,NEARUSDT,cmf_divergence,CMF Divergence,LONG,0.8197163120567377,0.947,Category cap: reversion_2h has 1/1 slots
+1770825702,NEARUSDT,cmf_divergence,CMF Divergence,LONG,0.8197163120567377,0.947,Category cap: reversion_2h has 1/1 slots
+1770825702,NEARUSDT,cmf_divergence,CMF Divergence,LONG,0.8197163120567377,0.947,Category cap: reversion_2h has 1/1 slots
+1770825726,NEARUSDT,cmf_divergence,CMF Divergence,LONG,0.8147826086956522,0.948,Category cap: reversion_2h has 1/1 slots
+1770825726,NEARUSDT,cmf_divergence,CMF Divergence,LONG,0.8147826086956522,0.948,Category cap: reversion_2h has 1/1 slots
+1770825726,NEARUSDT,cmf_divergence,CMF Divergence,LONG,0.8147826086956522,0.948,Category cap: reversion_2h has 1/1 slots
+1770825799,LTCUSDT,cmf_divergence,CMF Divergence,LONG,0.8099319727891148,51.2,Category cap: reversion_2h has 1/1 slots
+1770825799,LTCUSDT,cmf_divergence,CMF Divergence,LONG,0.8099319727891148,51.2,Category cap: reversion_2h has 1/1 slots
+1770825799,LTCUSDT,cmf_divergence,CMF Divergence,LONG,0.8099319727891148,51.2,Category cap: reversion_2h has 1/1 slots
+1770827891,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,SHORT,0.813291869217103,0.08894,Category cap: trend_2h has 1/1 slots
+1770827891,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,SHORT,0.813291869217103,0.08894,Category cap: trend_2h has 1/1 slots
+1770827891,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,SHORT,0.813291869217103,0.08894,Category cap: trend_2h has 1/1 slots
+1770827967,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,SHORT,0.8318706541938462,0.08908,Category cap: trend_2h has 1/1 slots
+1770827967,NEARUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,SHORT,0.8042187920862625,0.948,Category cap: trend_2h has 1/1 slots
+1770827967,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,SHORT,0.8318706541938462,0.08908,Category cap: trend_2h has 1/1 slots
+1770827967,NEARUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,SHORT,0.8042187920862625,0.948,Category cap: trend_2h has 1/1 slots
+1770827967,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,SHORT,0.8318706541938462,0.08908,Category cap: trend_2h has 1/1 slots
+1770827967,NEARUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,SHORT,0.8042187920862625,0.948,Category cap: trend_2h has 1/1 slots
+1770830891,NEARUSDT,supertrend_flip,Supertrend Trend Flip,LONG,0.8045110720783256,0.962,Category cap: trend_2h has 1/1 slots
+1770830891,NEARUSDT,supertrend_flip,Supertrend Trend Flip,LONG,0.8045110720783256,0.962,Category cap: trend_2h has 1/1 slots
+1770830891,NEARUSDT,supertrend_flip,Supertrend Trend Flip,LONG,0.8045110720783256,0.962,Category cap: trend_2h has 1/1 slots
+1770831042,AVAXUSDT,structure_break_ob_4h,structure_break_ob_4h,SHORT,0.77,8.653,Cooldown: AVAXUSDT 155s/3600s
+1770831568,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.8063322884012517,8.665,Cooldown: AVAXUSDT 680s/1200s
+1770831643,AVAXUSDT,structure_break_ob_4h,structure_break_ob_4h,SHORT,0.77,8.648,Cooldown: AVAXUSDT 756s/3600s
+1770832017,AVAXUSDT,structure_break_ob_4h,structure_break_ob_4h,SHORT,0.77,8.616,Cooldown: AVAXUSDT 1130s/3600s
+1770832017,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.8039316239316239,0.09007,Cooldown: DOGEUSDT 380s/1200s
+1770832092,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.8070833333333345,0.09019,Cooldown: DOGEUSDT 455s/1200s
+1770832543,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.8364564564564569,8.646,Category cap: reversion_2h has 1/1 slots
+1770832543,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8296124031007752,0.965,Cooldown: NEARUSDT 755s/1200s
+1770832543,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.812017543859648,0.09027,Cooldown: DOGEUSDT 906s/1200s
+1770832543,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.8364564564564569,8.646,Category cap: reversion_2h has 1/1 slots
+1770832543,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.8364564564564569,8.646,Category cap: reversion_2h has 1/1 slots
+1770832767,AVAXUSDT,structure_break_ob_4h,structure_break_ob_4h,SHORT,0.77,8.63,Cooldown: AVAXUSDT 1880s/3600s
+1770832842,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8352845528455285,0.96,Cooldown: NEARUSDT 1054s/1200s
+1770833442,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.8009401709401704,0.08979,Cooldown: DOGEUSDT 80s/1200s
+1770833743,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.8294806421152019,0.09024,Cooldown: DOGEUSDT 380s/1200s
+1770834043,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.89,606.02,Cooldown: BNBUSDT 80s/1200s
+1770834043,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.8383333333333329,0.09069,Cooldown: DOGEUSDT 680s/1200s
+1770834043,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8158974358974359,0.964,Category cap: reversion_2h has 1/1 slots
+1770834043,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8158974358974359,0.964,Category cap: reversion_2h has 1/1 slots
+1770834043,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8158974358974359,0.964,Category cap: reversion_2h has 1/1 slots
+1770834343,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.89,607.42,Cooldown: BNBUSDT 380s/1200s
+1770834343,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.8421004566210045,8.696,Cooldown: AVAXUSDT 80s/1200s
+1770834343,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.8416755793226379,0.09091,Cooldown: DOGEUSDT 980s/1200s
+1770834642,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,607.81,Cooldown: BNBUSDT 680s/1200s
+1770834642,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.8140602284527514,8.702,Cooldown: AVAXUSDT 380s/1200s
+1770834642,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.8114928425357857,0.0909,Category cap: reversion_2h has 1/1 slots
+1770834642,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8030769230769231,0.968,Cooldown: NEARUSDT 80s/1200s
+1770834642,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.8114928425357857,0.0909,Category cap: reversion_2h has 1/1 slots
+1770834642,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.8114928425357857,0.0909,Category cap: reversion_2h has 1/1 slots
+1770834942,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.8426128427865783,607.7,Cooldown: BNBUSDT 980s/1200s
+1770835243,LTCUSDT,cmf_divergence,CMF Divergence,SHORT,0.8129501915708799,52.3,Cooldown: LTCUSDT 380s/1200s
+1770835843,LTCUSDT,cmf_divergence,CMF Divergence,SHORT,0.8287179487179479,52.29,Cooldown: LTCUSDT 980s/1200s
+1770836142,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.8276190476190473,8.707,Category cap: reversion_2h has 1/1 slots
+1770836142,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8109751903709165,1944.72,Cooldown: ETHUSDT 80s/1200s
+1770836142,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.8276190476190473,8.707,Category cap: reversion_2h has 1/1 slots
+1770836142,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.8276190476190473,8.707,Category cap: reversion_2h has 1/1 slots
+1770837042,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,611.46,Cooldown: BNBUSDT -145s/1200s
+1770837042,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8421989919731191,1951.04,Cooldown: ETHUSDT 980s/1200s
+1770837042,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.8358629776021079,8.724,Category cap: reversion_2h has 1/1 slots
+1770837042,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8027642276422764,0.972,Cooldown: NEARUSDT 80s/1200s
+1770837042,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.8358629776021079,8.724,Category cap: reversion_2h has 1/1 slots
+1770837042,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.8358629776021079,8.724,Category cap: reversion_2h has 1/1 slots
+1770837117,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,611.55,Cooldown: BNBUSDT -70s/1200s
+1770837117,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8433603001524218,1949.67,Cooldown: ETHUSDT 1055s/1200s
+1770837117,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8124324324324325,0.972,Cooldown: NEARUSDT 155s/1200s
+1770837193,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1951.61,Cooldown: ETHUSDT 1130s/1200s
+1770837193,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,612.06,Cooldown: BNBUSDT 5s/1200s
+1770837193,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8180952380952382,0.971,Cooldown: NEARUSDT 230s/1200s
+1770837267,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.89,612.97,Cooldown: BNBUSDT 80s/1200s
+1770837343,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,0.09109,Category cap: reversion_2h has 1/1 slots
+1770837343,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,8.736,Same-side flood: 2 SHORTs already in window
+1770837343,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,0.973,Cooldown: NEARUSDT 380s/1200s
+1770837343,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,612.58,Cooldown: BNBUSDT 155s/1200s
+1770837343,LTCUSDT,cmf_divergence,CMF Divergence,SHORT,0.8484119747800439,52.39,Same-side flood: 2 SHORTs already in window
+1770837343,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,0.09109,Category cap: reversion_2h has 1/1 slots
+1770837343,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,8.736,Same-side flood: 2 SHORTs already in window
+1770837343,LTCUSDT,cmf_divergence,CMF Divergence,SHORT,0.8484119747800439,52.39,Same-side flood: 2 SHORTs already in window
+1770837343,DOGEUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,0.09109,Category cap: reversion_2h has 1/1 slots
+1770837420,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,0.974,Cooldown: NEARUSDT 457s/1200s
+1770837420,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,612.8,Cooldown: BNBUSDT 232s/1200s
+1770837492,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1951.59,Cooldown: ETHUSDT -71s/1200s
+1770837492,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,8.737,Cooldown: AVAXUSDT -145s/1200s
+1770837492,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,0.973,Cooldown: NEARUSDT 530s/1200s
+1770837492,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,612.26,Cooldown: BNBUSDT 305s/1200s
+1770837567,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,611.65,Cooldown: BNBUSDT 380s/1200s
+1770837642,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1948.01,Cooldown: ETHUSDT 79s/1200s
+1770837642,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,8.722,Cooldown: AVAXUSDT 5s/1200s
+1770837642,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,0.97,Cooldown: NEARUSDT 680s/1200s
+1770837642,BNBUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,611.32,Cooldown: BNBUSDT 455s/1200s
+1770837717,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,8.72,Cooldown: AVAXUSDT 80s/1200s
+1770837792,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,8.726,Cooldown: AVAXUSDT 155s/1200s
+1770837942,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,8.731,Cooldown: AVAXUSDT 305s/1200s
+1770838017,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8066666666666666,0.971,Cooldown: NEARUSDT 1055s/1200s
+1770838242,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8010911218370623,1942.13,Cooldown: ETHUSDT 679s/1200s
+1770838995,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8131036195442982,1951.28,Cooldown: ETHUSDT -144s/1200s
+1770839067,LTCUSDT,cmf_divergence,CMF Divergence,SHORT,0.8023918575063608,52.37,Cooldown: LTCUSDT -145s/1200s
+1770839218,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8076998169615611,1954.31,Cooldown: ETHUSDT 79s/1200s
+1770839292,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8115597195215377,1952.99,Cooldown: ETHUSDT 155s/1200s
+1770839592,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8063775971093052,1952.99,Cooldown: ETHUSDT 454s/1200s
+1770845892,DOGEUSDT,keltner_reversion,Keltner Channel Mean Reversion,SHORT,0.8280807341780451,0.0922,Category cap: reversion_2h has 1/1 slots
+1770845892,DOGEUSDT,keltner_reversion,Keltner Channel Mean Reversion,SHORT,0.8280807341780451,0.0922,Category cap: reversion_2h has 1/1 slots
+1770845892,DOGEUSDT,keltner_reversion,Keltner Channel Mean Reversion,SHORT,0.8280807341780451,0.0922,Category cap: reversion_2h has 1/1 slots
+1770852119,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.8923392305532181,606.16,Category cap: reversion_2h has 1/1 slots
+1770852119,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.8923392305532181,606.16,Category cap: reversion_2h has 1/1 slots
+1770852119,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.8923392305532181,606.16,Category cap: reversion_2h has 1/1 slots
+1770852192,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.9,0.09054,Cooldown: DOGEUSDT -145s/1200s
+1770852342,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.86,0.09059,Cooldown: DOGEUSDT 5s/1200s
+1770852418,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.86,0.09068,Cooldown: DOGEUSDT 80s/1200s
+1770852492,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.86,0.09071,Cooldown: DOGEUSDT 155s/1200s
+1770852643,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.86,0.09064,Cooldown: DOGEUSDT 305s/1200s
+1770852717,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.8554098360655746,0.0906,Cooldown: DOGEUSDT 380s/1200s
+1770852792,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.8534693877551004,0.09063,Cooldown: DOGEUSDT 455s/1200s
+1770852942,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.86,0.09047,Cooldown: DOGEUSDT 605s/1200s
+1770853017,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.8592503346720229,0.09047,Cooldown: DOGEUSDT 680s/1200s
+1770853092,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.8295412844036677,0.0906,Cooldown: DOGEUSDT 755s/1200s
+1770853170,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.9,0.09073,Cooldown: DOGEUSDT 833s/1200s
+1770860368,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,8.77,Category cap: reversion_2h has 1/1 slots
+1770860368,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8042424242424242,0.977,Cooldown: NEARUSDT 455s/1200s
+1770860368,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,8.77,Category cap: reversion_2h has 1/1 slots
+1770860368,AVAXUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,8.77,Category cap: reversion_2h has 1/1 slots
+1770860442,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.856079043161725,1973.71,Cooldown: ETHUSDT -145s/1200s
+1770860518,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1972.62,Cooldown: ETHUSDT -70s/1200s
+1770860668,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1972.23,Cooldown: ETHUSDT 80s/1200s
+1770863669,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8085714285714285,0.977,Cooldown: NEARUSDT -145s/1200s
+1770863743,NEARUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,LONG,0.8346051357035259,0.978,Cooldown: NEARUSDT -70s/1200s
+1770863893,NEARUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,LONG,0.851868256198631,0.977,Cooldown: NEARUSDT 80s/1200s
+1770864118,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8113725490196079,0.977,Cooldown: NEARUSDT 305s/1200s
+1770864268,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8066666666666666,0.978,Cooldown: NEARUSDT 455s/1200s
+1770872818,NEARUSDT,cmf_divergence,CMF Divergence,LONG,0.8244444444444445,0.97,Cooldown: NEARUSDT -145s/1200s
+1770873118,NEARUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,SHORT,0.8094114885093331,0.969,Cooldown: NEARUSDT 155s/1200s
+1770873193,NEARUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,SHORT,0.8319150535033237,0.968,Cooldown: NEARUSDT 230s/1200s
+1770873418,ETHUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,SHORT,0.8225418050297343,1957.6,Cooldown: ETHUSDT -145s/1200s
+1770873493,AVAXUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,SHORT,0.8271229796389067,8.689,Category cap: structural_2h has 1/1 slots
+1770873493,ETHUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,SHORT,0.8211622952412647,1952.87,Cooldown: ETHUSDT -70s/1200s
+1770873493,AVAXUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,SHORT,0.8271229796389067,8.689,Category cap: structural_2h has 1/1 slots
+1770873493,AVAXUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,SHORT,0.8271229796389067,8.689,Category cap: structural_2h has 1/1 slots
+1770881654,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8133333333333334,0.984,Cooldown: NEARUSDT 1124s/1200s
+1770883154,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8010526315789475,0.988,Cooldown: NEARUSDT -145s/1200s
+1770883230,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8010526315789475,0.987,Cooldown: NEARUSDT -69s/1200s
+1770883304,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8244444444444444,0.987,Cooldown: NEARUSDT 5s/1200s
+1770883379,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8244444444444444,0.987,Cooldown: NEARUSDT 80s/1200s
+1770883530,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8010526315789475,0.987,Cooldown: NEARUSDT 231s/1200s
+1770884654,ETHUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,SHORT,0.8263888084552459,1960.56,Cooldown: ETHUSDT 149s/1200s
+1770884729,ETHUSDT,bb_kc_squeeze,BB+Keltner Squeeze Breakout,SHORT,0.8216040355129198,1961.1,Cooldown: ETHUSDT 224s/1200s
+1770887504,NEARUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.8206095026082975,0.984,Cooldown: NEARUSDT 230s/1200s
+1770887730,NEARUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.817308488890755,0.984,Cooldown: NEARUSDT 456s/1200s
+1770888930,DOGEUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,LONG,0.8771279633675731,0.09326,Cooldown: DOGEUSDT 75s/1200s
+1770889079,DOGEUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,LONG,0.88,0.09325,Cooldown: DOGEUSDT 224s/1200s
+1770889154,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.8244444444444444,0.992,Cooldown: NEARUSDT 298s/1200s
+1770892530,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,0.999,Cooldown: NEARUSDT -70s/1200s
+1770892830,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,0.999,Cooldown: NEARUSDT 231s/1200s
+1770893431,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1.001,Cooldown: NEARUSDT 831s/1200s
+1770893579,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8538217536271074,1989.81,Cooldown: ETHUSDT 148s/1200s
+1770893654,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.853196291817815,1992.35,Cooldown: ETHUSDT 223s/1200s
+1770893731,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1992.97,Cooldown: ETHUSDT 299s/1200s
+1770893731,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1.007,Cooldown: NEARUSDT 1131s/1200s
+1770893879,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1993.38,Cooldown: ETHUSDT 448s/1200s
+1770893954,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8599094510469731,1992.43,Cooldown: ETHUSDT 523s/1200s
+1770894030,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1992.0,Cooldown: ETHUSDT 598s/1200s
+1770894030,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1.008,Category cap: reversion_2h has 1/1 slots
+1770894030,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1.008,Category cap: reversion_2h has 1/1 slots
+1770894030,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1.008,Category cap: reversion_2h has 1/1 slots
+1770894179,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1.008,Category cap: reversion_2h has 1/1 slots
+1770894179,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1.008,Category cap: reversion_2h has 1/1 slots
+1770894179,NEARUSDT,cmf_divergence,CMF Divergence,SHORT,0.86,1.008,Category cap: reversion_2h has 1/1 slots
+1770894330,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8415214016411598,1990.86,Cooldown: ETHUSDT 899s/1200s
+1770895229,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8074313288789906,1991.64,Category cap: reversion_2h has 1/1 slots
+1770895229,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8074313288789906,1991.64,Category cap: reversion_2h has 1/1 slots
+1770895229,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8074313288789906,1991.64,Category cap: reversion_2h has 1/1 slots
+1770895304,NEARUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.8214512026769577,0.998,Cooldown: NEARUSDT 224s/1200s
+1770895304,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8114751810171845,1994.0,Category cap: reversion_2h has 1/1 slots
+1770895304,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8114751810171845,1994.0,Category cap: reversion_2h has 1/1 slots
+1770895304,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8114751810171845,1994.0,Category cap: reversion_2h has 1/1 slots
+1770895531,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.8582648153189938,1994.96,Cooldown: ETHUSDT -69s/1200s
+1770895605,ETHUSDT,cmf_divergence,CMF Divergence,SHORT,0.856405339349498,1994.61,Cooldown: ETHUSDT 6s/1200s
+1770903320,NEARUSDT,cmf_divergence,CMF Divergence,LONG,0.86,0.959,Cooldown: NEARUSDT 224s/1200s
+1770903393,NEARUSDT,cmf_divergence,CMF Divergence,LONG,0.86,0.959,Cooldown: NEARUSDT 299s/1200s
+1770903544,NEARUSDT,cmf_divergence,CMF Divergence,LONG,0.86,0.959,Cooldown: NEARUSDT 449s/1200s
+1770904971,NEARUSDT,cmf_divergence,CMF Divergence,LONG,0.8316129032258064,0.955,Cooldown: NEARUSDT -143s/1200s
+1770907601,BNBUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.8539367125674115,611.11,Cooldown: BNBUSDT 74s/1200s
+1770907900,ADAUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.84,0.2666,Cooldown: ADAUSDT 73s/1200s
+1770907900,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.8174828851413607,0.09423,Category cap: trend_2h has 1/1 slots
+1770907900,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.8174828851413607,0.09423,Category cap: trend_2h has 1/1 slots
+1770907900,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.8174828851413607,0.09423,Category cap: trend_2h has 1/1 slots
+1770908876,OPUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.88,0.1801,Category cap: trend_2h has 1/1 slots
+1770908876,OPUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.88,0.1801,Category cap: trend_2h has 1/1 slots
+1770908876,OPUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.88,0.1801,Category cap: trend_2h has 1/1 slots
+1770909551,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.8116193320685784,0.09389,Category cap: trend_2h has 1/1 slots
+1770909551,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.8116193320685784,0.09389,Category cap: trend_2h has 1/1 slots
+1770909551,DOGEUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.8116193320685784,0.09389,Category cap: trend_2h has 1/1 slots
+1770909701,AVAXUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.8174247178232849,8.91,Category cap: trend_2h has 1/1 slots
+1770909701,AVAXUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.8174247178232849,8.91,Category cap: trend_2h has 1/1 slots
+1770909701,AVAXUSDT,mtf_ema_ribbon,Multi-TF EMA Ribbon,LONG,0.8174247178232849,8.91,Category cap: trend_2h has 1/1 slots
+1770911051,ADAUSDT,cmf_divergence,CMF Divergence,LONG,0.809487179487179,0.2641,Category cap: reversion_2h has 1/1 slots
+1770911051,ADAUSDT,cmf_divergence,CMF Divergence,LONG,0.809487179487179,0.2641,Category cap: reversion_2h has 1/1 slots
+1770911051,ADAUSDT,cmf_divergence,CMF Divergence,LONG,0.809487179487179,0.2641,Category cap: reversion_2h has 1/1 slots
+1770911725,APTUSDT,cmf_divergence,CMF Divergence,LONG,0.8196135265700483,0.92,Category cap: reversion_2h has 1/1 slots
+1770911725,APTUSDT,cmf_divergence,CMF Divergence,LONG,0.8196135265700483,0.92,Category cap: reversion_2h has 1/1 slots
+1770911725,APTUSDT,cmf_divergence,CMF Divergence,LONG,0.8196135265700483,0.92,Category cap: reversion_2h has 1/1 slots
+1770911875,FILUSDT,cmf_divergence,CMF Divergence,LONG,0.8513725490196079,0.902,Category cap: reversion_2h has 1/1 slots
+1770911875,FILUSDT,cmf_divergence,CMF Divergence,LONG,0.8513725490196079,0.902,Category cap: reversion_2h has 1/1 slots
+1770911875,FILUSDT,cmf_divergence,CMF Divergence,LONG,0.8513725490196079,0.902,Category cap: reversion_2h has 1/1 slots
+1770911951,GRTUSDT,weekly_vwap_trend_4h,weekly_vwap_trend_4h,SHORT,0.7526,0.02652,Category cap: trend_4h has 1/1 slots
+1770911951,FILUSDT,cmf_divergence,CMF Divergence,LONG,0.8265040650406504,0.901,Category cap: reversion_2h has 1/1 slots
+1770911951,FILUSDT,cmf_divergence,CMF Divergence,LONG,0.8265040650406504,0.901,Category cap: reversion_2h has 1/1 slots
+1770911951,FILUSDT,cmf_divergence,CMF Divergence,LONG,0.8265040650406504,0.901,Category cap: reversion_2h has 1/1 slots
+1770912101,ETHUSDT,cmf_divergence,CMF Divergence,LONG,0.9,1948.33,Category cap: reversion_2h has 1/1 slots
+1770912101,ADAUSDT,cmf_divergence,CMF Divergence,LONG,0.8683775811209435,0.2626,Category cap: reversion_2h has 1/1 slots
+1770912101,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.8387725631768946,609.21,Cooldown: BNBUSDT 1125s/1200s
+1770912101,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.8383773216031282,0.09335,Same-side flood: 2 LONGs already in window
+1770912101,OPUSDT,cmf_divergence,CMF Divergence,LONG,0.829090909090909,0.1795,Same-side flood: 2 LONGs already in window
+1770912101,BTCUSDT,cmf_divergence,CMF Divergence,LONG,0.8244054379624853,67190.3,Same-side flood: 2 LONGs already in window
+1770912101,ETHUSDT,cmf_divergence,CMF Divergence,LONG,0.9,1948.33,Category cap: reversion_2h has 1/1 slots
+1770912101,ADAUSDT,cmf_divergence,CMF Divergence,LONG,0.8683775811209435,0.2626,Category cap: reversion_2h has 1/1 slots
+1770912101,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.8383773216031282,0.09335,Same-side flood: 2 LONGs already in window
+1770912101,OPUSDT,cmf_divergence,CMF Divergence,LONG,0.829090909090909,0.1795,Same-side flood: 2 LONGs already in window
+1770912101,BTCUSDT,cmf_divergence,CMF Divergence,LONG,0.8244054379624853,67190.3,Same-side flood: 2 LONGs already in window
+1770912101,ETHUSDT,cmf_divergence,CMF Divergence,LONG,0.9,1948.33,Category cap: reversion_2h has 1/1 slots
+1770912101,ADAUSDT,cmf_divergence,CMF Divergence,LONG,0.8683775811209435,0.2626,Category cap: reversion_2h has 1/1 slots
+1770912252,FILUSDT,cmf_divergence,CMF Divergence,LONG,0.8644444444444446,0.9,Category cap: reversion_2h has 1/1 slots
+1770912252,OPUSDT,cmf_divergence,CMF Divergence,LONG,0.8503797468354439,0.1793,Category cap: reversion_2h has 1/1 slots
+1770912252,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.8432804232804219,0.09338,Same-side flood: 2 LONGs already in window
+1770912252,FILUSDT,cmf_divergence,CMF Divergence,LONG,0.8644444444444446,0.9,Category cap: reversion_2h has 1/1 slots
+1770912252,OPUSDT,cmf_divergence,CMF Divergence,LONG,0.8503797468354439,0.1793,Category cap: reversion_2h has 1/1 slots
+1770912252,DOGEUSDT,cmf_divergence,CMF Divergence,LONG,0.8432804232804219,0.09338,Same-side flood: 2 LONGs already in window
+1770912252,FILUSDT,cmf_divergence,CMF Divergence,LONG,0.8644444444444446,0.9,Category cap: reversion_2h has 1/1 slots
+1770912252,OPUSDT,cmf_divergence,CMF Divergence,LONG,0.8503797468354439,0.1793,Category cap: reversion_2h has 1/1 slots
+1770912590,DOGEUSDT,weekly_vwap_trend_4h,weekly_vwap_trend_4h,SHORT,0.716,0.09272,Category cap: trend_4h has 1/1 slots
+1770912590,AVAXUSDT,weekly_vwap_trend_4h,weekly_vwap_trend_4h,SHORT,0.7104,8.726,Same-side flood: 2 SHORTs already in window
+1770912664,FILUSDT,cmf_divergence,CMF Divergence,LONG,0.8151420853586612,0.894,Category cap: reversion_2h has 1/1 slots
+1770912664,FILUSDT,cmf_divergence,CMF Divergence,LONG,0.8151420853586612,0.894,Category cap: reversion_2h has 1/1 slots
+1770912664,FILUSDT,cmf_divergence,CMF Divergence,LONG,0.8151420853586612,0.894,Category cap: reversion_2h has 1/1 slots
+1770912741,DOGEUSDT,supertrend_flip,Supertrend Trend Flip,SHORT,0.809480122324159,0.09246,Cooldown: DOGEUSDT -137s/1200s
+1770912815,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.8398570828079029,605.89,Category cap: reversion_2h has 1/1 slots
+1770912815,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.8398570828079029,605.89,Category cap: reversion_2h has 1/1 slots
+1770912815,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.8398570828079029,605.89,Category cap: reversion_2h has 1/1 slots
+1770912964,ADAUSDT,weekly_vwap_trend_4h,weekly_vwap_trend_4h,SHORT,0.7224,0.26,Cooldown: ADAUSDT 223s/3600s
+1770913113,LTCUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.88,52.37,Cooldown: LTCUSDT 148s/1200s
+1770913113,OPUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.88,0.1779,Category cap: trend_2h has 1/1 slots
+1770913113,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.8275670498084278,606.45,Category cap: reversion_2h has 1/1 slots
+1770913113,OPUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.88,0.1779,Category cap: trend_2h has 1/1 slots
+1770913113,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.8275670498084278,606.45,Category cap: reversion_2h has 1/1 slots
+1770913113,OPUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.88,0.1779,Category cap: trend_2h has 1/1 slots
+1770913113,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.8275670498084278,606.45,Category cap: reversion_2h has 1/1 slots
+1770913340,ARBUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.8219175772526685,0.1085,Category cap: trend_2h has 1/1 slots
+1770913340,ARBUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.8219175772526685,0.1085,Category cap: trend_2h has 1/1 slots
+1770913340,ARBUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.8219175772526685,0.1085,Category cap: trend_2h has 1/1 slots
+1770913416,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.86,602.6,Category cap: reversion_2h has 1/1 slots
+1770913416,ATOMUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.8441799470350764,1.935,Category cap: trend_2h has 1/1 slots
+1770913416,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.86,602.6,Category cap: reversion_2h has 1/1 slots
+1770913416,ATOMUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.8441799470350764,1.935,Category cap: trend_2h has 1/1 slots
+1770913416,BNBUSDT,cmf_divergence,CMF Divergence,LONG,0.86,602.6,Category cap: reversion_2h has 1/1 slots
+1770913416,ATOMUSDT,ichimoku_cloud,Ichimoku Cloud Breakout,SHORT,0.8441799470350764,1.935,Category cap: trend_2h has 1/1 slots

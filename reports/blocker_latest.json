@@ -1,0 +1,36 @@
+{
+  "ts": 1770833526,
+  "reasons": {
+    "no_pattern_trigger": 142,
+    "confirm_signal_failed": 1,
+    "confidence_below_threshold": 4,
+    "pair_filter_block": 2,
+    "trend_alignment_block": 1
+  },
+  "passed": [
+    [
+      "ETHUSDT",
+      "ichimoku_cloud",
+      0.6974,
+      "SHORT"
+    ],
+    [
+      "DOGEUSDT",
+      "mtf_ema_ribbon",
+      0.6509,
+      "SHORT"
+    ],
+    [
+      "AVAXUSDT",
+      "mtf_ema_ribbon",
+      0.6428,
+      "SHORT"
+    ],
+    [
+      "NEARUSDT",
+      "mtf_ema_ribbon",
+      0.6898,
+      "SHORT"
+    ]
+  ]
+}

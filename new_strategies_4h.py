@@ -231,12 +231,13 @@ def compute_12h_bias(
 
     # ── Guard: need enough 1h candles to build 12H bars ──
     if len(candles_1h) < 360:
-        logger.debug(f"[12H filter] {pair}: only {len(candles_1h)} 1h candles, need 360+")
+        logger.warning(f"[12H filter] {pair}: only {len(candles_1h)} 1h candles (need 360+) — falling back to NEUTRAL bias. Ensure 1h candle fetch limit >= 500.")
         return neutral
 
     # ── Aggregate 1h → 12h ──
     candles_12h = aggregate_candles(candles_1h, 12)
     if len(candles_12h) < 32:
+        logger.warning(f"[12H filter] {pair}: only {len(candles_12h)} 12H bars after aggregation (need 32+) — NEUTRAL bias")
         return neutral
 
     closes_12h = [c.close for c in candles_12h]

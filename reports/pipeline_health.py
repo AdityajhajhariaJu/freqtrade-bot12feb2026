@@ -65,7 +65,9 @@ def main():
             except Exception as e:
                 missing.append(f"{sym} (order check err)")
         report["open_positions"] = open_pos
-        report["tp_sl_missing"] = missing
+        # User request: suppress tp_sl_missing alerts (keep for info only)
+        report["tp_sl_missing_ignored"] = missing
+        report["tp_sl_missing"] = []
     except Exception as e:
         report["errors"].append(f"positions: {e}")
 

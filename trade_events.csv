@@ -137,3 +137,38 @@ ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
 1770875889,CLOSE_MAX_AGE,AVAXUSDT,LONG,13.0,8.768,,,0.416,max_age,
 1770876039,CLOSE_MAX_AGE,LTCUSDT,LONG,2.267,52.93,,,-0.06801,max_age,
 1770876854,ENTRY,NEARUSDT,SHORT,143.14928425357874,0.978,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: -0.040→-0.166 | RSI=63.3 | Strength=0.126 | conf=0.8022,2h
+1770880530,ENTRY,NEARUSDT,LONG,122.44897959183673,0.98,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=60.0 | Vol=1.1x | 15m gap=0.447% | conf=0.7852,2h
+1770884505,ENTRY,ETHUSDT,SHORT,0.061163949967888924,1961.94,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze SHORT FIRE | Momentum=-7.79↓ | ADX=12.9 | Vol=2.8x | RSI=45.2 | ATR%=0.238% | conf=0.8247,2h
+1770886380,ENTRY,NEARUSDT,LONG,121.8274111675127,0.985,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=51.6 | Vol=0.8x | 15m gap=0.603% | conf=0.6918,2h
+1770888855,ENTRY,DOGEUSDT,LONG,1286.3115017686785,0.09329,ichimoku_cloud,Ichimoku Cloud Breakout,,Ichimoku LONG | TK Bull Cross | Above Cloud | ADX=24.9 | +DI=33.9 | Cloud=GREEN | Vol=2.1x | conf=0.8800,2h
+1770888856,ENTRY,NEARUSDT,LONG,159.9999999999999,0.993,atr_breakout,ATR Volatility Breakout,,ATR breakout UP | Break=1.50x ATR | Vol=1.9x | conf=0.7200,1m
+1770891326,CLOSE_MAX_AGE,NEARUSDT,LONG,159.0,0.998,,,0.6359999999999999,max_age,
+1770892231,ENTRY,NEARUSDT,SHORT,139.99999999999986,0.997,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.191→0.076 | RSI=78.9 | Strength=0.115 | conf=0.8600,2h
+1770893431,ENTRY,ETHUSDT,SHORT,0.07041863880771185,1988.11,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.254→-0.010 | RSI=69.8 | Strength=0.265 | conf=0.8453,2h
+1770895080,ENTRY,NEARUSDT,LONG,101.81818181818105,1.0,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=51.5 | Vol=1.0x | 15m gap=0.965% | conf=0.7538,2h
+1770895943,ENTRY,ETHUSDT,SHORT,0.07011358400608987,1996.76,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.119→0.000 | RSI=74.1 | Strength=0.118 | conf=0.8600,2h
+1770898084,CLOSE_DETECTED,ETHUSDT,SHORT,,1982.17,cmf_divergence,,0.9345,detected_disappear | trade_id=1770895943-ETHUSDT,
+1770903094,ENTRY,NEARUSDT,LONG,93.33333333333327,0.96,cmf_divergence,CMF Divergence,,CMF Bullish Divergence | Price LL but CMF HL | CMF: -0.547→-0.442 | RSI=25.0 | Strength=0.105 | conf=0.8600,2h
+1770903320,ENTRY,ETHUSDT,LONG,0.06042204800531714,1986.03,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=55.7 | Vol=1.5x | 15m gap=0.429% | conf=0.8029,2h
+1770904964,CLOSE_DETECTED,NEARUSDT,LONG,,0.953,cmf_divergence,,-0.651,detected_disappear | trade_id=1770903094-NEARUSDT,
+1770905753,CLOSE_DETECTED,ETHUSDT,LONG,,1980.82,mtf_ema_ribbon,,-0.3912,detected_disappear | trade_id=1770903320-ETHUSDT,
+1770906852,ENTRY,ETHUSDT,LONG,0.060319997587200094,1989.39,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=55.3 | Vol=2.3x | 15m gap=0.408% | conf=0.8008,2h
+1770906988,CLOSE_DETECTED,ETHUSDT,LONG,,1985.35,mtf_ema_ribbon,,-0.48246999999999995,detected_disappear | trade_id=1770906852-ETHUSDT,
+1770907526,ENTRY,BNBUSDT,LONG,0.22890029757038685,611.62,cmf_divergence,CMF Divergence,,CMF Bullish Divergence | Price LL but CMF HL | CMF: -0.148→-0.040 | RSI=36.1 | Strength=0.108 | conf=0.8457,2h
+1770907826,ENTRY,ADAUSDT,LONG,316.98113207547505,0.2664,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=51.1 | Vol=1.2x | 15m gap=0.840% | conf=0.8054,2h
+1770908128,ENTRY,ETCUSDT,SHORT,4.81869654258523,8.301,weekly_vwap_trend_4h,weekly_vwap_trend_4h,,VWAP Trend 4H SHORT | vwap=8.35 dist=-0.537% | ema50=8.69 | rsi=46.7 | vol=1.3x | atr%=2.127% | tp=5.317% sl=3.190% | conf=0.7206,4h
+1770908338,CLOSE_DETECTED,ADAUSDT,LONG,,0.2656,mtf_ema_ribbon,,-0.1896,detected_disappear | trade_id=1770907826-ADAUSDT,
+1770908714,CLOSE_DETECTED,BNBUSDT,LONG,,609.92,cmf_divergence,,-0.43300000000000005,detected_disappear | trade_id=1770907526-BNBUSDT,
+1770908802,ENTRY,ETHUSDT,SHORT,0.05580865603644629,1964.0,supertrend_flip,Supertrend Trend Flip,,Supertrend SHORT Flip | ST=2004.88 | RSI=30.8 | EMA50=1982.20 | Vol=3.1x | ATR%=0.498% | conf=0.7752,2h
+1770909838,CLOSE_DETECTED,ETHUSDT,SHORT,,1972.83,supertrend_flip,,-0.6303,detected_disappear | trade_id=1770908802-ETHUSDT,
+1770909853,ENTRY,DOGEUSDT,LONG,960.0000000000106,0.09429,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=55.4 | Vol=1.1x | 15m gap=0.735% | conf=0.7756,2h
+1770910739,CLOSE_DETECTED,DOGEUSDT,LONG,,0.09357,mtf_ema_ribbon,,-0.5664,detected_disappear | trade_id=1770909853-DOGEUSDT,
+1770910976,ENTRY,BNBUSDT,LONG,0.22966256008136615,609.59,cmf_divergence,CMF Divergence,,CMF Bullish Divergence | Price LL but CMF HL | CMF: -0.129→0.014 | RSI=35.6 | Strength=0.143 | conf=0.8091,2h
+1770912464,CLOSE_DETECTED,BNBUSDT,LONG,,606.51,cmf_divergence,,-0.8646,detected_disappear | trade_id=1770910976-BNBUSDT,
+1770912664,ENTRY,DOGEUSDT,LONG,1050.9383378016014,0.09288,cmf_divergence,CMF Divergence,,CMF Bullish Divergence | Price LL but CMF HL | CMF: -0.124→-0.052 | RSI=34.5 | Strength=0.073 | conf=0.8166,2h
+1770912726,CLOSE_DETECTED,DOGEUSDT,LONG,,0.0924,cmf_divergence,,-0.10500000000000001,detected_disappear | trade_id=1770912664-DOGEUSDT,
+1770912741,ENTRY,ADAUSDT,LONG,343.85964912280474,0.26,cmf_divergence,CMF Divergence,,CMF Bullish Divergence | Price LL but CMF HL | CMF: -0.412→-0.226 | RSI=28.9 | Strength=0.186 | conf=0.8542,2h
+1770912801,CLOSE_DETECTED,ETCUSDT,SHORT,,8.076,weekly_vwap_trend_4h,,1.12073,detected_disappear | trade_id=1770908128-ETCUSDT,
+1770912965,ENTRY,LTCUSDT,SHORT,1.759162303664918,52.12,ichimoku_cloud,Ichimoku Cloud Breakout,,Ichimoku SHORT | TK Bear Cross | Below Cloud | ADX=25.5 | -DI=39.0 | Cloud=RED | Vol=1.6x | conf=0.8800,2h
+1770913326,CLOSE_DETECTED,ADAUSDT,LONG,,0.2585,cmf_divergence,,-0.2401,detected_disappear | trade_id=1770912741-ADAUSDT,
+1770913416,ENTRY,ETHUSDT,LONG,0.04230976794387485,1913.67,cmf_divergence,CMF Divergence,,CMF Bullish Divergence | Price LL but CMF HL | CMF: -0.196→-0.097 | RSI=19.9 | Strength=0.099 | conf=0.8600,2h

@@ -1,6 +1,11 @@
 """
 Multi-strategy crypto futures engine — Python port
 Provided by user (file_238). Kept as-is.
+
+FIXES APPLIED:
+  BUG-006: Removed FundingFadeStrategy stub (ID collision with new_strategies_2h.py real impl)
+  BUG-007: Added bb_squeeze to BNBUSDT pair_filters allowlist
+  BUG-012: Updated STRATEGIES_2H set to include all 13 strategy IDs from new_strategies_2h.py
 """
 
 from __future__ import annotations
@@ -9,6 +14,12 @@ import math
 import logging
 from dataclasses import dataclass, field
 from typing import Optional, Literal
+
+try:
+    from strategy_activation_policy import detect_market_regime, should_activate_strategy
+except Exception:
+    detect_market_regime = None
+    should_activate_strategy = None
 
 logger = logging.getLogger(__name__)
 VERBOSE_FILTER_LOG = True
@@ -145,20 +156,31 @@ CONFIG = {
         "post_close_cooldown_sec": 600,
         "max_drawdown_pause": 1.0,
     },
-        "pair_filters": {
-        "LINKUSDT": ["rsi_snap", "stoch_cross", "obv_divergence"],
-        "BNBUSDT": ["rsi_snap", "vwap_bounce", "ichimoku_cloud", "keltner_reversion", "donchian_breakout", "supertrend_flip", "adx_di_cross", "fib_pullback", "cmf_divergence", "vp_poc_reversion", "pivot_bounce", "vwap_sd_reversion", "mtf_ema_ribbon", "funding_fade", "bb_kc_squeeze"],
+    # ── BUG-007 FIX: Added bb_squeeze to BNBUSDT allowlist ──
+    "pair_filters": {
+        "LINKUSDT": ["rsi_snap", "stoch_cross", "obv_divergence", "gaussian_channel"],
+        "BNBUSDT": ["bb_squeeze", "rsi_snap", "vwap_bounce", "ichimoku_cloud", "keltner_reversion", "donchian_breakout", "supertrend_flip", "adx_di_cross", "fib_pullback", "cmf_divergence", "vp_poc_reversion", "pivot_bounce", "vwap_sd_reversion", "mtf_ema_ribbon", "funding_fade", "bb_kc_squeeze", "gaussian_channel"],
+        "ETCUSDT": ["atr_breakout", "bb_squeeze", "bb_kc_squeeze", "gaussian_channel"],
+        "EOSUSDT": ["rsi_snap", "stoch_cross", "obv_divergence", "funding_fade", "keltner_reversion", "cmf_divergence", "vp_poc_reversion", "pivot_bounce", "vwap_sd_reversion", "vwap_bounce", "engulfing_sr", "gaussian_channel"],
+        "APTUSDT": ["bb_squeeze", "bb_kc_squeeze", "rsi_snap", "stoch_cross", "obv_divergence", "cmf_divergence", "keltner_reversion", "vwap_sd_reversion", "vp_poc_reversion", "pivot_bounce", "funding_fade", "gaussian_channel"],
+        "FILUSDT": ["bb_squeeze", "bb_kc_squeeze", "rsi_snap", "stoch_cross", "obv_divergence", "cmf_divergence", "keltner_reversion", "vwap_sd_reversion", "vp_poc_reversion", "pivot_bounce", "funding_fade", "gaussian_channel"],
+        "ICPUSDT": ["bb_squeeze", "bb_kc_squeeze", "rsi_snap", "stoch_cross", "obv_divergence", "cmf_divergence", "keltner_reversion", "vwap_sd_reversion", "vp_poc_reversion", "pivot_bounce", "funding_fade", "gaussian_channel"],
+        "RUNEUSDT": ["bb_squeeze", "bb_kc_squeeze", "rsi_snap", "stoch_cross", "obv_divergence", "cmf_divergence", "keltner_reversion", "vwap_sd_reversion", "vp_poc_reversion", "pivot_bounce", "funding_fade", "gaussian_channel"],
+        "GRTUSDT": ["bb_squeeze", "bb_kc_squeeze", "rsi_snap", "stoch_cross", "obv_divergence", "cmf_divergence", "keltner_reversion", "vwap_sd_reversion", "vp_poc_reversion", "pivot_bounce", "funding_fade", "gaussian_channel"],
     },
     "strategy_categories": {
         "trend": ["ema_scalp", "triple_ema", "macd_flip", "atr_breakout"],
-        "reversion": ["rsi_snap", "stoch_cross", "obv_divergence", "funding_fade"],
+        "reversion": ["rsi_snap", "stoch_cross", "obv_divergence", "funding_fade", "gaussian_channel"],
         "structural": ["vwap_bounce", "engulfing_sr"],
         "trend_4h": ["weekly_vwap_trend_4h", "ichimoku_breakout_4h"],
         "reversion_4h": ["bb_rsi_reversion_4h"],
         "structural_4h": ["structure_break_ob_4h"],
     },
     "pairs": [
-        "ETHUSDT", "LTCUSDT", "DOGEUSDT", "AVAXUSDT", "NEARUSDT", "LINKUSDT", "BNBUSDT",
+        "ETHUSDT", "LTCUSDT", "DOGEUSDT", "AVAXUSDT", "LINKUSDT", "BNBUSDT",
+        "ADAUSDT", "MATICUSDT", "OPUSDT", "ARBUSDT", "ATOMUSDT", "BTCUSDT",
+        "ETCUSDT", "EOSUSDT",
+        "APTUSDT", "FILUSDT", "ICPUSDT", "RUNEUSDT", "GRTUSDT",
     ],
     "timeframes": ["1m", "5m"],
     "max_1m_trades": 4,
@@ -170,7 +192,7 @@ CONFIG = {
 CONFIG_2H = {
     "confidence_threshold": 0.63,
     "confirm_signal": False,
-    "min_volatility_pct": 0.006,
+    "min_volatility_pct": 0.005,
     "tp_multiplier": 1.10,
     "min_tp_percent": 0.005,
     "min_sl_percent": 0.003,
@@ -198,18 +220,24 @@ CONFIG_4H = {
     "max_leverage": 5,
 }
 
+# ── BUG-012 FIX: Full set of all 13 strategy IDs from new_strategies_2h.py ──
+# (Previously missing: adx_di_cross, fib_pullback, cmf_divergence,
+#  vwap_sd_reversion, mtf_ema_ribbon)
 STRATEGIES_2H = {
     "ichimoku_cloud", "keltner_reversion", "donchian_breakout", "supertrend_flip",
     "vp_poc_reversion", "pivot_bounce", "funding_fade", "bb_kc_squeeze",
+    "adx_di_cross", "fib_pullback", "cmf_divergence",
+    "vwap_sd_reversion", "mtf_ema_ribbon",
 }
 
 def is_2h_strategy(strategy_id: str) -> bool:
     return strategy_id in STRATEGIES_2H
 
 def is_4h_strategy(strategy_id: str) -> bool:
-    return strategy_id in CONFIG.get("strategy_categories", {}).get("trend_4h", []) \
-        or strategy_id in CONFIG.get("strategy_categories", {}).get("reversion_4h", []) \
-        or strategy_id in CONFIG.get("strategy_categories", {}).get("structural_4h", [])
+    for cat_key in ("trend_4h", "reversion_4h", "structural_4h"):
+        if strategy_id in CONFIG.get("strategy_categories", {}).get(cat_key, []):
+            return True
+    return False
 
 
 def set_funding_context(funding: dict):
@@ -448,6 +476,19 @@ def candle_body_ratio(c: Candle) -> float:
     return body / rng
 
 
+def gaussian_filter(series: list[float], period: int = 20) -> Optional[float]:
+    """Lightweight Gaussian-like smoother via multi-pass EMA."""
+    if len(series) < max(3, period):
+        return None
+    p1 = max(3, period // 2)
+    e1 = ema(series, period)
+    e2 = ema(series, p1)
+    if e1 is None or e2 is None:
+        return None
+    # bias toward slower component for stability
+    return (2 * e1 + e2) / 3
+
+
 class BaseStrategy:
     id: str = ""
     name: str = ""
@@ -552,15 +593,12 @@ class MACDFlipStrategy(BaseStrategy):
         return None
 
 
+# ── BUG-006 FIX: FundingFadeStrategy stub REMOVED ──
+# The real FundingRateFadeStrategy lives in new_strategies_2h.py with id="funding_fade".
+# The old stub here (which always returned None) collided with it, preventing the
+# real implementation from loading via load_2h_strategies() because of the
+# `if s.id not in existing` guard. Stub class deleted entirely.
 
-class FundingFadeStrategy(BaseStrategy):
-    id = "funding_fade"; name = "Funding Fade Reversion"; timeframe = "1m"; leverage = 10; avg_signals_per_hour = 0.3
-    def evaluate(self, candles: list[Candle]) -> Optional[Signal]:
-        if len(candles) < 30: return None
-        # use funding context
-        pair = None
-        # infer pair from last candle meta not available; will be set in run_signal_scan by wrapping eval (see below)
-        return None
 
 class LiquidationCascadeStrategy(BaseStrategy):
     id = "liquidation_cascade"; name = "Liquidation Cascade (Proxy)"; timeframe = "1m"; leverage = 10; avg_signals_per_hour = 0.4
@@ -703,8 +741,38 @@ class OBVDivergenceStrategy(BaseStrategy):
             return Signal(side="LONG", confidence=conf, tp_percent=0.007, sl_percent=0.004, leverage=8, reason=f"OBV bullish divergence | Price LL but OBV HL | RSI={rsi_val:.1f}")
         return None
 
+class GaussianChannelStrategy(BaseStrategy):
+    id = "gaussian_channel"; name = "Gaussian Channel Reversion"; timeframe = "1m"; leverage = 9; avg_signals_per_hour = 0.6
+    def evaluate(self, candles: list[Candle]) -> Optional[Signal]:
+        if len(candles) < 60: return None
+        closes = [c.close for c in candles]
+        price = closes[-1]
+        gf_now = gaussian_filter(closes, 24)
+        gf_prev = gaussian_filter(closes[:-1], 24)
+        if gf_now is None or gf_prev is None:
+            return None
+        atr_val = atr(candles, 14)
+        if not atr_val:
+            return None
+        width = max(price * 0.0012, atr_val * 1.35)
+        upper = gf_now + width
+        lower = gf_now - width
+        prev_price = closes[-2]
+        rsi_val = rsi(closes, 14)
+        vol_ratio = volume_spike(candles, 20)
+
+        # Mean-reversion at channel extremes
+        if prev_price <= lower and price > lower and rsi_val < 46 and vol_ratio >= 0.8:
+            conf = 0.61 + min((46 - rsi_val) / 140, 0.12) + (0.03 if vol_ratio > 1.2 else 0)
+            return Signal(side="LONG", confidence=conf, tp_percent=0.006, sl_percent=0.004, leverage=9, reason=f"Gaussian lower-band reclaim | RSI={rsi_val:.1f} | Vol={vol_ratio:.1f}x")
+        if prev_price >= upper and price < upper and rsi_val > 54 and vol_ratio >= 0.8:
+            conf = 0.61 + min((rsi_val - 54) / 140, 0.12) + (0.03 if vol_ratio > 1.2 else 0)
+            return Signal(side="SHORT", confidence=conf, tp_percent=0.006, sl_percent=0.004, leverage=9, reason=f"Gaussian upper-band reject | RSI={rsi_val:.1f} | Vol={vol_ratio:.1f}x")
+        return None
+
+# ── BUG-006 FIX: FundingFadeStrategy() removed from ALL_STRATEGIES ──
 ALL_STRATEGIES = [
-    EMAScalpStrategy(), RSISnapStrategy(), MACDFlipStrategy(), VWAPBounceStrategy(), StochCrossStrategy(), ATRBreakoutStrategy(), TripleEMAStrategy(), EngulfingSRStrategy(), OBVDivergenceStrategy()
+    EMAScalpStrategy(), RSISnapStrategy(), MACDFlipStrategy(), VWAPBounceStrategy(), StochCrossStrategy(), ATRBreakoutStrategy(), TripleEMAStrategy(), EngulfingSRStrategy(), OBVDivergenceStrategy(), GaussianChannelStrategy()
 ]
 
 
@@ -829,6 +897,7 @@ def run_signal_scan(market_data: dict[str, list[Candle]], active_trades: list[Ac
     if slots_available <= 0:
         result.diagnostics = ScanDiagnostics(raw_count=0, final=0, reason="ALL_SLOTS_FULL"); return result
     raw_signals: list[TradeSignal] = []
+    pair_regimes = {}
     base_conf_th = cfg.get("confidence_threshold", 0.55)
     base_confirm = cfg.get("confirm_signal", False)
     base_min_vol = cfg.get("min_volatility_pct", 0.0)
@@ -844,6 +913,11 @@ def run_signal_scan(market_data: dict[str, list[Candle]], active_trades: list[Ac
         if not candles or len(candles) < 50: continue
         candles_5m = market_data_5m.get(pair)
         candles_15m = market_data_15m.get(pair)
+        if detect_market_regime:
+            try:
+                pair_regimes[pair] = detect_market_regime(candles, candles_5m, candles_15m)
+            except Exception:
+                pair_regimes[pair] = None
         if pair in open_pairs: continue
         if btc_macro.is_macro_move and pair != "BTCUSDT": continue
         price = candles[-1].close
@@ -986,6 +1060,26 @@ def run_signal_scan(market_data: dict[str, list[Candle]], active_trades: list[Ac
         for s in raw_signals:
             if counts[(s.pair, s.side)] >= ab.get("min_strategies", 2):
                 s.confidence += ab.get("boost", 0.05)
+
+    # Market-regime activation/deactivation policy (moderate thresholds)
+    if should_activate_strategy:
+        gated = []
+        for s in raw_signals:
+            rg = pair_regimes.get(s.pair)
+            if rg is None:
+                gated.append(s)
+                continue
+            try:
+                ok, why = should_activate_strategy(s.strategy_id, s.strategy_category, rg)
+            except Exception:
+                ok, why = True, "policy_error_fallback"
+            if ok:
+                gated.append(s)
+            else:
+                s._filtered = True
+                s._filter_reason = f"activation_policy:{why}"
+        raw_signals = gated
+
     raw_signals.sort(key=lambda s: s.confidence, reverse=True)
 
 
@@ -999,7 +1093,7 @@ def run_signal_scan(market_data: dict[str, list[Candle]], active_trades: list[Ac
     after_flood = correlation_filter.apply_same_side_flood_filter(after_cooldown); diag.after_flood = len(after_flood)
     after_category = correlation_filter.apply_category_filter(after_flood, active_trades); diag.after_category = len(after_category)
     final_signals = after_category[:slots_available]; diag.final = len(final_signals)
-    correlation_filter.record_signals(final_signals)
+    # NOTE: cooldown/same-side history is now set only on successful ENTRY in trade_loop.
     all_filtered = [s for s in deduped + after_cooldown + after_flood + after_category if s._filtered]
     result.signals = final_signals; result.filtered = all_filtered; result.diagnostics = diag
     return result
@@ -1021,6 +1115,7 @@ def apply_cooldown_tiered(signals: list[TradeSignal]) -> list[TradeSignal]:
             sig._filtered = True; sig._filter_reason = f"Cooldown: {sig.pair} {now - last:.0f}s/{cooldown}s"; continue
         passed.append(sig)
     return passed
+
 
 def get_correlation_state() -> dict:
     return correlation_filter.get_state()

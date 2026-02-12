@@ -1,16 +1,19 @@
-# virtualenv
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
 .venv/
 
-# Python cache
-__pycache__/
-*.py[cod]
-
-# Local configs / secrets
+# Secrets / local config
 config.binance_futures_live.json
 *.env
+.env
 
 # Logs
 *.log
 
-# OS junk
-.DS_Store
+# Large/runtime backups
+reports/backups/

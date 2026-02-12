@@ -1606,24 +1606,33 @@ class BBKeltnerSqueezeStrategy(BaseStrategy):
 #  EXPORTS: Plug into your existing bot
 # ═══════════════════════════════════════════════════════════════════
 
+# ── BUG-012 FIX: All 13 strategies now exported (was 8, 5 were dead code) ──
 NEW_2H_STRATEGIES = [
     IchimokuCloudStrategy(),        # S1:  Trend breakout (5m)
     KeltnerReversionStrategy(),     # S2:  Mean reversion in ranges (5m)
     DonchianBreakoutStrategy(),     # S3:  Turtle breakout (5m)
     SupertrendFlipStrategy(),       # S4:  Trend flip (5m)
+    ADXDICrossStrategy(),           # S5:  Trend start DI cross (5m)
+    FibonacciPullbackStrategy(),    # S6:  Fibonacci pullback (5m)
+    CMFDivergenceStrategy(),        # S7:  Smart money divergence (5m)
     VolumeProfilePOCStrategy(),     # S8:  POC reversion (15m)
     PivotPointBounceStrategy(),     # S9:  Key level reaction (5m)
+    VWAPBandReversionStrategy(),    # S10: VWAP SD reversion (5m)
+    MultiTFEMARibbonStrategy(),     # S11: Multi-TF EMA ribbon (5m+15m)
     FundingRateFadeStrategy(),      # S12: Fade overleveraged crowd (needs funding data)
     BBKeltnerSqueezeStrategy(),     # S13: Volatility squeeze explosion (5m)
 ]
 
 # New category registrations for CONFIG["strategy_categories"]
+# ── BUG-012 FIX: Categories now include all 13 strategy IDs ──
 NEW_CATEGORIES = {
     "trend_2h": [
         "ichimoku_cloud", "donchian_breakout", "supertrend_flip",
+        "adx_di_cross", "mtf_ema_ribbon",
     ],
     "reversion_2h": [
         "keltner_reversion", "vp_poc_reversion", "pivot_bounce",
+        "fib_pullback", "cmf_divergence", "vwap_sd_reversion",
     ],
     "structural_2h": [
         "bb_kc_squeeze", "funding_fade",
@@ -1631,14 +1640,20 @@ NEW_CATEGORIES = {
 }
 
 # Max age timeouts for 2h strategies (longer than 1m scalps)
+# ── BUG-012 FIX: Max ages for all 13 strategies ──
 NEW_MAX_AGE = {
     # These trades hold 1-3 hours, so max_age should be ~4 hours
     "ichimoku_cloud":    14400,  # 4h
     "keltner_reversion": 10800,  # 3h
     "donchian_breakout": 14400,  # 4h
     "supertrend_flip":   10800,  # 3h
+    "adx_di_cross":      10800,  # 3h
+    "fib_pullback":      10800,  # 3h
+    "cmf_divergence":     9000,  # 2.5h
     "vp_poc_reversion":  10800,  # 3h
     "pivot_bounce":      7200,   # 2h
+    "vwap_sd_reversion":  7200,  # 2h
+    "mtf_ema_ribbon":    10800,  # 3h
     "funding_fade":      14400,  # 4h
     "bb_kc_squeeze":     14400,  # 4h
 }
