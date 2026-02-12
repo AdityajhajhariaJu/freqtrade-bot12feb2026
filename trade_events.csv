@@ -1,75 +1,139 @@
 ts,event,pair,side,qty,price,strategy_id,strategy_name,pnl,note,engine
 1770728360,ENTRY,INJUSDT,SHORT,78.99934167215274,3.038,vwap_bounce,VWAP Bounce Scalp,,VWAP rejection short | Dist=-0.076% | RSI=55.6,
 1770728439,ENTRY,INJUSDT,SHORT,78.97334649555775,3.039,vwap_bounce,VWAP Bounce Scalp,,VWAP rejection short | Dist=-0.028% | RSI=50.0,
-1770729947,CLOSE_MAX_AGE,INJ,SHORT,157.8,,,,,max_age,
+1770729947,CLOSE_MAX_AGE,INJUSDT,SHORT,157.8,,vwap_bounce,VWAP Bounce Scalp,,max_age | backfilled_strategy,
 1770731763,ENTRY,LTCUSDT,LONG,3.750234389649353,53.33,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.33% | ATR=0.094%,
-1770733336,CLOSE_MAX_AGE,LTC,LONG,3.75,,,,,max_age,
+1770733336,CLOSE_MAX_AGE,LTCUSDT,LONG,3.75,,bb_squeeze,Bollinger Squeeze Breakout,,max_age | backfilled_strategy,
 1770734362,ENTRY,DOGEUSDT,SHORT,979.5918367346933,0.09248,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze SHORT FIRE | Momentum=-0.00↓ | ADX=17.7 | Vol=5.0x | RSI=38.3 | ATR%=0.392%,
 1770734363,ENTRY,ETHUSDT,SHORT,0.06668254346272938,2007.33,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=1.43% | ATR=0.299%,
 1770734447,ENTRY,BNBUSDT,SHORT,0.1802575107296117,619.2,adx_di_cross,ADX DI Crossover,,ADX DI Cross SHORT | ADX=29.4↑ | -DI=33.0>17.8 | RSI=33.3 | Vol=3.2x | BBwidth=0.010↑,
 1770734672,ENTRY,DOGEUSDT,SHORT,649.5615459564794,0.09237,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze SHORT FIRE | Momentum=-0.00↓ | ADX=18.4 | Vol=4.7x | RSI=28.5 | ATR%=0.426%,
-1770735870,CLOSE_MAX_AGE,DOGE,SHORT,1628.0,,,,,max_age,
-1770736020,CLOSE_MAX_AGE,BNB,SHORT,0.18,,,,,max_age,
+1770735870,CLOSE_MAX_AGE,DOGEUSDT,SHORT,1628.0,,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,max_age | backfilled_strategy,
+1770736020,CLOSE_MAX_AGE,BNBUSDT,SHORT,0.18,,adx_di_cross,ADX DI Crossover,,max_age | backfilled_strategy,
 1770739522,ENTRY,DOGEUSDT,SHORT,2160.9940572663427,0.09255,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.60% | ATR=0.184%,
 1770740120,ENTRY,ETHUSDT,LONG,0.09204470742932327,2031.82,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=1.08% | ATR=0.214%,1m
 1770741545,ENTRY,DOGEUSDT,LONG,2140.869192892314,0.09342,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.73% | ATR=0.167%,1m
-1770741715,ENTRY_RECOVER,DOGE,LONG,2140.0,0.0934,,,,Recovered open position (strategy unknown),unknown
-1770741786,ENTRY_RECOVER,DOGE,,2140.0,,,,,Recovered open position,1m
+1770741715,ENTRY_RECOVER,DOGEUSDT,LONG,2140.0,0.0934,bb_squeeze,Bollinger Squeeze Breakout,,Recovered open position (strategy unknown) | backfilled_strategy,unknown
+1770741786,ENTRY_RECOVER,DOGEUSDT,,2140.0,,bb_squeeze,Bollinger Squeeze Breakout,,Recovered open position | backfilled_strategy,1m
 1770743889,ENTRY,ETHUSDT,LONG,0.09843730773963331,2031.75,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.67% | ATR=0.132%,1m
-1770745462,CLOSE_MAX_AGE,ETH,LONG,0.098,,,,,max_age,
+1770745462,CLOSE_MAX_AGE,ETHUSDT,LONG,0.098,,bb_squeeze,Bollinger Squeeze Breakout,,max_age | backfilled_strategy,1m
 1770746814,ENTRY,NEARUSDT,SHORT,112.00000000000199,0.996,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze SHORT FIRE | Momentum=-0.00↓ | ADX=27.5 | Vol=1.6x | RSI=41.7 | ATR%=0.409%,2h
 1770748015,ENTRY,AVAXUSDT,SHORT,22.95684113865932,8.712,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=1.03% | ATR=0.169%,1m
-1770748388,CLOSE_MAX_AGE,NEAR,SHORT,112.0,,,,,max_age,
-1770749587,CLOSE_MAX_AGE,AVAX,SHORT,22.0,,,,,max_age,
+1770748388,CLOSE_MAX_AGE,NEARUSDT,SHORT,112.0,,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,max_age | backfilled_strategy,2h
+1770749587,CLOSE_MAX_AGE,AVAXUSDT,SHORT,22.0,,bb_squeeze,Bollinger Squeeze Breakout,,max_age | backfilled_strategy,1m
 1770749590,ENTRY,DOGEUSDT,LONG,1516.7930660888408,0.0923,keltner_reversion,Keltner Channel Mean Reversion,,Keltner LONG Reversion | Price at lower band | RSI=20.5 | ADX=25.6 | CMF=0.005 | Dist to mid=0.87%,2h
-1770749846,ENTRY_RECOVER,DOGE,,1516.0,,,,,Recovered open position,1m
-1770751123,CLOSE_MAX_AGE,DOGE,LONG,1516.0,,,,,max_age,
+1770749846,ENTRY_RECOVER,DOGEUSDT,,1516.0,,keltner_reversion,Keltner Channel Mean Reversion,,Recovered open position | backfilled_strategy,1m
+1770751123,CLOSE_MAX_AGE,DOGEUSDT,LONG,1516.0,,keltner_reversion,Keltner Channel Mean Reversion,,max_age | backfilled_strategy,2h
 1770752281,ENTRY,NEARUSDT,LONG,193.10344827586187,0.991,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=1.23% | ATR=0.209%,1m
-1770752501,ENTRY_RECOVER,NEAR,,193.0,,,,,Recovered open position,1m
+1770752501,ENTRY_RECOVER,NEARUSDT,,193.0,,bb_squeeze,Bollinger Squeeze Breakout,,Recovered open position | backfilled_strategy,1m
 1770754454,ENTRY,AVAXUSDT,SHORT,22.996435552489366,8.697,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.41% | ATR=0.102%,1m
 1770755354,ENTRY,LTCUSDT,LONG,3.7530493525989868,53.29,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.32% | ATR=0.079%,1m
-1770756027,CLOSE_MAX_AGE,AVAX,SHORT,22.0,,,,,max_age,
-1770756703,ENTRY_RECOVER,LTC,,3.753,,,,,Recovered open position,1m
-1770756854,CLOSE_MAX_AGE,LTC,LONG,3.753,,,,,max_age,
+1770756027,CLOSE_MAX_AGE,AVAXUSDT,SHORT,22.0,,bb_squeeze,Bollinger Squeeze Breakout,,max_age | backfilled_strategy,1m
+1770756703,ENTRY_RECOVER,LTCUSDT,,3.753,,bb_squeeze,Bollinger Squeeze Breakout,,Recovered open position | backfilled_strategy,1m
+1770756854,CLOSE_MAX_AGE,LTCUSDT,LONG,3.753,,bb_squeeze,Bollinger Squeeze Breakout,,max_age | backfilled_strategy,1m
 1770759016,ENTRY,ETHUSDT,SHORT,0.09977450960828528,2004.52,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.46% | ATR=0.072%,1m
 1770759091,ENTRY,LTCUSDT,SHORT,2.2645782223060955,52.99,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze SHORT FIRE | Momentum=-0.26↓ | ADX=31.4 | Vol=1.9x | RSI=38.5 | ATR%=0.226%,2h
-1770760589,CLOSE_MAX_AGE,ETH,SHORT,0.099,2007.06,,,-0.34254,max_age,
+1770760589,CLOSE_MAX_AGE,ETHUSDT,SHORT,0.099,2007.06,bb_squeeze,Bollinger Squeeze Breakout,-0.34254,max_age | backfilled_strategy,1m
 1770762166,ENTRY,AVAXUSDT,LONG,22.95684113865932,8.712,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.30% | ATR=0.075%,1m
 1770766366,ENTRY,LTCUSDT,LONG,3.75234521575985,53.3,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.27% | ATR=0.064%,1m
 1770766741,ENTRY,ETHUSDT,LONG,0.09906630012135623,2018.85,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.32% | ATR=0.081%,1m
-1770767939,CLOSE_MAX_AGE,LTC,LONG,3.752,53.32,,,,max_age,
+1770767939,CLOSE_MAX_AGE,LTCUSDT,LONG,3.752,53.32,bb_squeeze,Bollinger Squeeze Breakout,,max_age | backfilled_strategy,1m
 1770768241,ENTRY,LTCUSDT,LONG,3.746721618583739,53.38,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.15% | ATR=0.060%,1m
-1770768314,CLOSE_MAX_AGE,ETH,LONG,0.099,2021.28,,,0.25839,max_age,
+1770768314,CLOSE_MAX_AGE,ETHUSDT,LONG,0.099,2021.28,bb_squeeze,Bollinger Squeeze Breakout,0.25839,max_age | backfilled_strategy,1m
 1770768391,ENTRY,ETHUSDT,LONG,0.09887676000632811,2022.72,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.27% | ATR=0.090%,1m
-1770769814,CLOSE_MAX_AGE,LTC,LONG,3.746,53.3,,,-0.41206,max_age,
-1770769964,CLOSE_MAX_AGE,ETH,LONG,0.098,2023.95,,,0.18228,max_age,
+1770769814,CLOSE_MAX_AGE,LTCUSDT,LONG,3.746,53.3,bb_squeeze,Bollinger Squeeze Breakout,-0.41206,max_age | backfilled_strategy,1m
+1770769964,CLOSE_MAX_AGE,ETHUSDT,LONG,0.098,2023.95,bb_squeeze,Bollinger Squeeze Breakout,0.18228,max_age | backfilled_strategy,1m
 1770771316,ENTRY,LTCUSDT,LONG,3.743916136278547,53.42,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.40% | ATR=0.082%,1m
-1770772890,CLOSE_MAX_AGE,LTC,LONG,3.743,53.36,,,-0.26201,max_age,
+1770772890,CLOSE_MAX_AGE,LTCUSDT,LONG,3.743,53.36,bb_squeeze,Bollinger Squeeze Breakout,-0.26201,max_age | backfilled_strategy,1m
 1770774241,ENTRY,AVAXUSDT,LONG,22.794620469569185,8.774,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.38% | ATR=0.075%,1m
 1770775441,ENTRY,ETHUSDT,LONG,0.09859016070196194,2028.6,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.37% | ATR=0.089%,1m
 1770775516,ENTRY,DOGEUSDT,LONG,2143.392991104919,0.09331,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.57% | ATR=0.077%,1m
-1770777015,CLOSE_MAX_AGE,ETH,LONG,0.098,2028.87,,,0.11661998999999999,max_age,
+1770777015,CLOSE_MAX_AGE,ETHUSDT,LONG,0.098,2028.87,bb_squeeze,Bollinger Squeeze Breakout,0.11661998999999999,max_age | backfilled_strategy,1m
 1770777019,ENTRY,LTCUSDT,LONG,3.7264766163592324,53.67,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout UP | BW=0.36% | ATR=0.073%,1m
-1770777090,CLOSE_MAX_AGE,DOGE,LONG,2143.0,0.09351,,,0.4286,max_age,
+1770777090,CLOSE_MAX_AGE,DOGEUSDT,LONG,2143.0,0.09351,bb_squeeze,Bollinger Squeeze Breakout,0.4286,max_age | backfilled_strategy,1m
 1770779191,ENTRY,DOGEUSDT,SHORT,2154.9402004094386,0.09281,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.35% | ATR=0.083%,1m
 1770779716,ENTRY,ETHUSDT,SHORT,0.09954309718392577,2009.18,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.46% | ATR=0.122%,1m
 1770781291,ENTRY,AVAXUSDT,LONG,13.401831583649765,8.954,adx_di_cross,ADX DI Crossover,,ADX DI Cross LONG | ADX=37.3↑ | +DI=44.8>16.7 | RSI=65.7 | Vol=4.5x | BBwidth=0.017↑,2h
 1770782105,RESET_MAPPING,,,,,,,,fresh_mapping_start,
 1770783166,ENTRY,ETHUSDT,SHORT,0.09984773220838222,2003.05,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.49% | ATR=0.116%,1m
 1770783241,ENTRY,LTCUSDT,SHORT,3.7778617302606725,52.94,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=0.45% | ATR=0.098%,1m
-1770783586,ENTRY_RECOVER,ETH,,0.099,,,,,Recovered open position,1m
-1770783586,ENTRY_RECOVER,LTC,,3.777,,,,,Recovered open position,1m
+1770783586,ENTRY_RECOVER,ETHUSDT,,0.099,,bb_squeeze,Bollinger Squeeze Breakout,,Recovered open position | backfilled_strategy,1m
+1770783586,ENTRY_RECOVER,LTCUSDT,,3.777,,bb_squeeze,Bollinger Squeeze Breakout,,Recovered open position | backfilled_strategy,1m
 1770784663,ENTRY,ETHUSDT,LONG,0.0703139013452909,1982.61,keltner_reversion,Keltner Channel Mean Reversion,,Keltner LONG Reversion | Price at lower band | RSI=20.1 | ADX=29.3 | CMF=-0.015 | Dist to mid=1.07%,2h
 1770784813,ENTRY,NEARUSDT,SHORT,151.3513513513512,0.979,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=1.79% | ATR=0.409%,1m
 1770785038,ENTRY,DOGEUSDT,LONG,1527.7171540811873,0.09164,keltner_reversion,Keltner Channel Mean Reversion,,Keltner LONG Reversion | Price at lower band | RSI=29.6 | ADX=23.3 | CMF=-0.090 | Dist to mid=1.06%,2h
-1770785406,ENTRY_RECOVER,DOGE,,1527.0,,,,,Recovered open position,1m
-1770785406,ENTRY_RECOVER,NEAR,,151.0,,,,,Recovered open position,1m
+1770785406,ENTRY_RECOVER,DOGEUSDT,,1527.0,,keltner_reversion,Keltner Channel Mean Reversion,,Recovered open position | backfilled_strategy,1m
+1770785406,ENTRY_RECOVER,NEARUSDT,,151.0,,bb_squeeze,Bollinger Squeeze Breakout,,Recovered open position | backfilled_strategy,1m
 1770785636,ENTRY,DOGEUSDT,LONG,1526.051885764116,0.09174,keltner_reversion,Keltner Channel Mean Reversion,,Keltner LONG Reversion | Price at lower band | RSI=25.0 | ADX=26.3 | CMF=-0.079 | Dist to mid=0.81%,2h
-1770786384,CLOSE_MAX_AGE,NEAR,SHORT,151.0,0.981,,,-0.45299999999999996,max_age,
+1770786384,CLOSE_MAX_AGE,NEARUSDT,SHORT,151.0,0.981,bb_squeeze,Bollinger Squeeze Breakout,-0.45299999999999996,max_age | backfilled_strategy,1m
 1770790111,ENTRY,ETHUSDT,SHORT,0.08135041692088672,1966.8,atr_breakout,ATR Volatility Breakout,,ATR breakout DOWN | Break=0.53x ATR | Vol=2.3x,1m
 1770790411,ENTRY,DOGEUSDT,SHORT,1595.4415954415895,0.09077,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=1.51% | ATR=0.276% | Vol>1.5x,1m
 1770790486,ENTRY,LTCUSDT,SHORT,2.947368421052623,52.05,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=1.20% | ATR=0.261% | Vol>1.5x,1m
 1770790786,ENTRY,ETHUSDT,SHORT,0.05139406398560966,1945.75,bb_squeeze,Bollinger Squeeze Breakout,,BB squeeze breakout DOWN | BW=1.68% | ATR=0.402% | Vol>1.5x,1m
 1770792355,ENTRY,DOGEUSDT,SHORT,1766.394347538088,0.09058,atr_breakout,ATR Volatility Breakout,,ATR breakout DOWN | Break=0.60x ATR | Vol=2.0x,1m
-1770792834,CLOSE_MAX_AGE,DOGEUSDT,SHORT,3361.0,0.09015,,,1.78872998,max_age,
-1770792908,CLOSE_MAX_AGE,LTCUSDT,SHORT,2.947,52.04,,,0.19011,max_age,
+1770792834,CLOSE_MAX_AGE,DOGEUSDT,SHORT,3361.0,0.09015,atr_breakout,ATR Volatility Breakout,1.78872998,max_age | backfilled_strategy,1m
+1770792908,CLOSE_MAX_AGE,LTCUSDT,SHORT,2.947,52.04,bb_squeeze,Bollinger Squeeze Breakout,0.19011,max_age | backfilled_strategy,1m
+1770824990,ENTRY,BNBUSDT,SHORT,0.16758104738154556,591.78,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon SHORT | 15m DOWN trend | 5m rally rejection @ EMA20 | RSI=35.3 | Vol=0.5x | 15m gap=0.678%,2h
+1770825065,ENTRY,DOGEUSDT,SHORT,1024.3902439024462,0.08852,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon SHORT | 15m DOWN trend | 5m rally rejection @ EMA20 | RSI=36.8 | Vol=0.6x | 15m gap=0.855%,2h
+1770825365,ENTRY,LTCUSDT,LONG,2.3757575757575573,51.25,cmf_divergence,CMF Divergence,,CMF Bullish Divergence | Price LL but CMF HL | CMF: -0.082→-0.009 | RSI=35.2 | Strength=0.073,2h
+1770826475,ENTRY,AVAXUSDT,LONG,12.249999999999991,8.635,supertrend_flip,Supertrend Trend Flip,,Supertrend LONG Flip | ST=8.42 | RSI=61.6 | EMA50=8.57 | Vol=1.4x | ATR%=0.703% | conf=0.7476,2h
+1770827600,ENTRY,ETHUSDT,SHORT,0.047870066961105684,1933.6,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon SHORT | 15m DOWN trend | 5m rally rejection @ EMA20 | RSI=59.0 | Vol=1.0x | 15m gap=0.647% | conf=0.7408,2h
+1770830668,ENTRY,AVAXUSDT,SHORT,3.4754402224281744,8.632,structure_break_ob_4h,structure_break_ob_4h,,StructBreak 4H SHORT | broke SL=8.65 | OB=8.68-8.77 | vol=2.7x | mm=0.31 | tp=3.556% sl=1.899% | conf=0.7700,4h
+1770831417,ENTRY,DOGEUSDT,SHORT,1209.8765432098792,0.09075,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.066→-0.004 | RSI=61.7 | Strength=0.070 | conf=0.7914,2h
+1770831568,ENTRY,NEARUSDT,SHORT,100.51282051282041,0.965,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.142→-0.083 | RSI=67.6 | Strength=0.226 | conf=0.8310,2h
+1770832238,CLOSE_MAX_AGE,AVAXUSDT,SHORT,3.0,8.64,,,-0.039,max_age,
+1770832988,CLOSE_MAX_AGE,DOGEUSDT,SHORT,1209.0,0.09007,,,0.83421,max_age,
+1770833138,CLOSE_MAX_AGE,NEARUSDT,SHORT,100.0,0.954,,,0.9,max_age,
+1770833145,ENTRY,DOGEUSDT,SHORT,1559.8885793871866,0.08975,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.175→0.078 | RSI=61.1 | Strength=0.097 | conf=0.7872,2h
+1770833743,ENTRY,BNBUSDT,SHORT,0.23201087136654405,603.42,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.145→0.032 | RSI=74.1 | Strength=0.112 | conf=0.8600,2h
+1770834043,ENTRY,AVAXUSDT,SHORT,16.171884024488854,8.657,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.338→0.147 | RSI=66.2 | Strength=0.191 | conf=0.8211,2h
+1770834342,ENTRY,NEARUSDT,SHORT,95.6097560975609,0.969,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.165→0.062 | RSI=67.9 | Strength=0.102 | conf=0.8324,2h
+1770834642,ENTRY,LTCUSDT,SHORT,2.686108979278588,52.12,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.173→0.020 | RSI=68.2 | Strength=0.153 | conf=0.8345,2h
+1770834868,ENTRY,DOGEUSDT,SHORT,1525.2918287937725,0.0908,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.049→-0.015 | RSI=61.8 | Strength=0.064 | conf=0.7920,2h
+1770835243,ENTRY,BNBUSDT,SHORT,0.22983222247759136,609.14,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.232→-0.108 | RSI=69.5 | Strength=0.340 | conf=0.8432,2h
+1770835843,ENTRY,ETHUSDT,LONG,0.07211067959164752,1941.46,supertrend_flip,Supertrend Trend Flip,,Supertrend LONG Flip | ST=1915.72 | RSI=56.4 | EMA50=1934.56 | Vol=1.4x | ATR%=0.446% | conf=0.7643,2h
+1770836743,ENTRY,NEARUSDT,SHORT,126.4516129032257,0.972,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.263→-0.169 | RSI=60.5 | Strength=0.432 | conf=0.7831,2h
+1770836968,ENTRY,BNBUSDT,SHORT,0.22832539630765217,613.16,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.205→0.110 | RSI=78.0 | Strength=0.095 | conf=0.8600,2h
+1770837343,ENTRY,ETHUSDT,SHORT,0.060888474681578014,1952.52,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.046→-0.051 | RSI=82.6 | Strength=0.097 | conf=0.8600,2h
+1770837413,CLOSE_MAX_AGE,ETHUSDT,LONG,0.012,1953.23,,,0.61692,max_age,
+1770837420,ENTRY,AVAXUSDT,SHORT,13.802816901408418,8.741,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.142→-0.015 | RSI=79.8 | Strength=0.157 | conf=0.8600,2h
+1770838538,CLOSE_MAX_AGE,BNBUSDT,SHORT,0.22,609.74,,,0.2882,max_age,
+1770838918,ENTRY,ETHUSDT,SHORT,0.07179523997558962,1949.99,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.084→-0.103 | RSI=60.3 | Strength=0.187 | conf=0.7822,2h
+1770838988,CLOSE_MAX_AGE,AVAXUSDT,SHORT,13.0,8.727,,,0.06499996000000001,max_age,
+1770838995,ENTRY,LTCUSDT,SHORT,2.673286232575902,52.37,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.235→-0.091 | RSI=62.3 | Strength=0.326 | conf=0.7955,2h
+1770840488,CLOSE_MAX_AGE,ETHUSDT,SHORT,0.071,1947.54,,,0.15762,max_age,
+1770840563,CLOSE_MAX_AGE,LTCUSDT,SHORT,2.673,52.09,,,0.82863,max_age,
+1770841018,ENTRY,AVAXUSDT,LONG,13.799448022079117,8.696,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=46.8 | Vol=0.8x | 15m gap=0.234% | conf=0.6680,2h
+1770841768,ENTRY,NEARUSDT,SHORT,130.66666666666657,0.959,supertrend_flip,Supertrend Trend Flip,,Supertrend SHORT Flip | ST=0.97 | RSI=31.2 | EMA50=0.96 | Vol=1.3x | ATR%=0.484% | conf=0.6862,2h
+1770843043,ENTRY,AVAXUSDT,LONG,13.813744675952574,8.687,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=43.1 | Vol=1.8x | 15m gap=0.180% | conf=0.7780,2h
+1770844613,CLOSE_MAX_AGE,AVAXUSDT,LONG,13.0,8.701,,,0.156,max_age,
+1770844768,ENTRY,LTCUSDT,LONG,2.2896393817973673,52.41,ichimoku_cloud,Ichimoku Cloud Breakout,,Ichimoku LONG | TK Bull Cross | Above Cloud | ADX=22.0 | +DI=29.0 | Cloud=GREEN | Vol=0.6x | conf=0.7023,2h
+1770845143,ENTRY,ETHUSDT,LONG,0.060980567525815106,1967.84,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze LONG FIRE | Momentum=16.82↑ | ADX=26.8 | Vol=5.9x | RSI=61.9 | ATR%=0.341% | conf=0.8600,2h
+1770846338,CLOSE_MAX_AGE,LTCUSDT,LONG,2.289,52.66,,,0.45780000000000004,max_age,
+1770846713,CLOSE_MAX_AGE,ETHUSDT,LONG,0.06,1975.75,,,0.4224,max_age,
+1770851518,ENTRY,NEARUSDT,LONG,130.66666666666657,0.963,keltner_reversion,Keltner Channel Mean Reversion,,Keltner LONG Reversion | Price at lower band | RSI=27.0 | ADX=28.0 | CMF=-0.079 | Dist to mid=1.07% | conf=0.7293,2h
+1770851593,ENTRY,ETHUSDT,SHORT,0.08233120815902273,1943.37,atr_breakout,ATR Volatility Breakout,,ATR breakout DOWN | Break=0.90x ATR | Vol=3.6x | conf=0.7200,1m
+1770852118,ENTRY,DOGEUSDT,LONG,1545.7657060836923,0.09057,cmf_divergence,CMF Divergence,,CMF Bullish Divergence | Price LL but CMF HL | CMF: -0.047→0.155 | RSI=26.8 | Strength=0.202 | conf=0.9000,2h
+1770853163,CLOSE_MAX_AGE,ETHUSDT,SHORT,0.082,1939.01,,,0.41902,max_age,
+1770853688,CLOSE_MAX_AGE,DOGEUSDT,LONG,1545.0,0.0911,,,0.78795,max_age,
+1770853843,ENTRY,LTCUSDT,SHORT,3.0663089306247606,52.18,obv_divergence,OBV Divergence Reversal,,OBV bearish divergence | Price HH but OBV LH | RSI=68.5 | conf=0.6676,1m
+1770859693,ENTRY,NEARUSDT,SHORT,139.99999999999986,0.974,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.013→-0.157 | RSI=63.3 | Strength=0.170 | conf=0.8022,2h
+1770859694,ENTRY,LTCUSDT,LONG,3.022289384208538,52.94,atr_breakout,ATR Volatility Breakout,,ATR breakout UP | Break=0.53x ATR | Vol=7.0x | conf=0.7200,1m
+1770860368,ENTRY,ETHUSDT,SHORT,0.07092521948822388,1973.91,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: 0.016→-0.051 | RSI=83.6 | Strength=0.066 | conf=0.8600,2h
+1770861263,CLOSE_MAX_AGE,LTCUSDT,LONG,3.022,52.79,,,-0.4533,max_age,
+1770861938,CLOSE_MAX_AGE,ETHUSDT,SHORT,0.07,1962.6,,,0.8092,max_age,
+1770861946,ENTRY,ETHUSDT,LONG,0.06113185631976036,1962.97,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=53.7 | Vol=1.1x | 15m gap=0.106% | conf=0.7194,2h
+1770863593,ENTRY,NEARUSDT,LONG,123.07692307692308,0.975,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=60.6 | Vol=0.9x | 15m gap=0.182% | conf=0.6751,2h
+1770863669,ENTRY,ETHUSDT,LONG,0.0610078496766584,1966.96,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=52.7 | Vol=0.7x | 15m gap=0.142% | conf=0.6441,2h
+1770865164,CLOSE_MAX_AGE,NEARUSDT,LONG,123.0,0.975,,,-0.246,max_age,
+1770870944,ENTRY,ETHUSDT,LONG,0.0610016470444702,1967.16,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=63.1 | Vol=1.9x | 15m gap=0.238% | conf=0.7838,2h
+1770871093,ENTRY,NEARUSDT,LONG,122.82497441146367,0.977,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=52.6 | Vol=0.9x | 15m gap=0.347% | conf=0.7339,2h
+1770872514,CLOSE_MAX_AGE,ETHUSDT,LONG,0.061,1966.4,,,-0.00426999,max_age,
+1770872743,ENTRY,NEARUSDT,SHORT,115.86206896551712,0.97,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze SHORT FIRE | Momentum=-0.00↓ | ADX=18.3 | Vol=7.1x | RSI=36.8 | ATR%=0.331% | conf=0.8517,2h
+1770873344,ENTRY,ETHUSDT,SHORT,0.06130174250203062,1957.53,bb_kc_squeeze,BB+Keltner Squeeze Breakout,,BB+KC Squeeze SHORT FIRE | Momentum=-9.15↓ | ADX=15.6 | Vol=1.8x | RSI=37.4 | ATR%=0.290% | conf=0.8381,2h
+1770874315,CLOSE_MAX_AGE,NEARUSDT,SHORT,115.0,0.97,,,-0.115,max_age,
+1770874322,ENTRY,AVAXUSDT,LONG,13.734691541719126,8.737,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=49.7 | Vol=0.8x | 15m gap=0.314% | conf=0.6676,2h
+1770874469,ENTRY,LTCUSDT,LONG,2.2671452862270924,52.93,mtf_ema_ribbon,Multi-TF EMA Ribbon,,MTF EMA Ribbon LONG | 15m UP trend | 5m pullback bounce @ EMA20 | RSI=56.4 | Vol=1.5x | 15m gap=0.374% | conf=0.7974,2h
+1770875889,CLOSE_MAX_AGE,AVAXUSDT,LONG,13.0,8.768,,,0.416,max_age,
+1770876039,CLOSE_MAX_AGE,LTCUSDT,LONG,2.267,52.93,,,-0.06801,max_age,
+1770876854,ENTRY,NEARUSDT,SHORT,143.14928425357874,0.978,cmf_divergence,CMF Divergence,,CMF Bearish Divergence | Price HH but CMF LH | CMF: -0.040→-0.166 | RSI=63.3 | Strength=0.126 | conf=0.8022,2h
